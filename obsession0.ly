@@ -144,71 +144,14 @@ voiceTwo = {
   d''2^\mordent \times 2/3 { \repeat unfold 3 { \scoop d''8.. r32 }} |
   \repeat unfold 4 { \scoop fis'8.. r32 } |
   \times 4/6 { \repeat unfold 6 eis'4-_ } |
-  fis'8. [ fis'16 fis' ] fis' [ fis' ] fis' [ fis' ] r8
-  fis'8. [ fis'16 fis' ] fis' [ fis' ] fis' [ fis' ] r16 |
-  fis'8. [ fis'16 fis' ] fis' [ fis' fis' ] fis' [ fis' ] r16 |
-  fis'8 [ fis'16 ] fis' [ fis' fis'] fis' [ fis' fis' ] |
-  \times 2/3 { e'4 fis' gis' ais' } gis'8 fis' e' r |
-  fis'8 [ fis'16 fis' fis' ] fis' [ fis' fis' ] \scoop fis' [ fis' ] fis' [ fis' ] r |
-  fis'8 [ fis'16 fis' ] fis' [ fis' ] ais' [ ais']  gis' [ gis' ] fisis'16 |
-  \times 2/3 { dis'8 [ dis' gis' ] } \times 2/3 { ais' [ b' ais' ] } gis'8 [ gis'16 ] gis' [ gis' gis' ]
-  \repeat unfold 3 { \scoop a'16.. r64 } r8 |
-  gis'16 gis' gis' gis' gis' |
-  fis'8. [ fis'16 fis' ] fis' [ fis' fis' ] r |
-  fis'8 fis'16 ais' ais' gis' fisis' fisis' fisis' fisis' |
-  gis' gis' gis' \repeat unfold 3 { \scoop a'16.. r64 }  |
-  gis'16 gis' gis' gis' fis' fis' |
-  gis'16. [ gis'32. ] r a'16. [ a'32. ] r32. b'16 [ b'16 b' ] \times 2/3 { a'8 [ gis' fis' ] } |
-  fis'8 [ fis'16 fis' fis' ] fis' [ fis' fis' ] r |
-  fis'8 [ fis'16 fis' ] fis' [ fis' ] fis' [ fis' fis' ] r |
-  fis'8 cis''16 cis'' cis'' cis'' cis'' |
-  \times 2/3 { b'8 cis'' dis'' } \times 2/3 { e'' dis'' cis'' } \times 4/7 { b' a' gis' fis' gis' fis' r } |
-  fis'8 fis'16 fis' fis' fis' fis' fis' fis' |
-  \times 2/3 { \repeat unfold 3 { \scoop b'8.. r32 } } \repeat unfold 2 { \scoop b'16.. r64 } |
-  fis'8 fis'16 fis' fis' fis' fis' r |
-  fis'8 fis'16 fis' fis' fis' fis' \times 2/3 { a'8-_^"cis b d fis a" gis'-_ gis'-_ }  gis'16 fis' r |
-  \repeat unfold 5 fis'16-_ |
-  \times 2/3 { e'16 fis' gis' } \times 2/3 { ais'16 gis' gis' } \times 2/3 { fis' e' fis' } \times 2/3 { gis' r } |
-  fis'8 fis'16 fis' fis' fis' fis' r |
-  fis'8 [ fis'16 ] g' [ g' g' ] d' [ d' ] d' [ d' e' ] fis' [ fis' fis' ] \repeat unfold 2 { cis'16.. r64  } |
-  fis'8^"intimate again" fis'16 fis' fis' fis' fis' fis' r |
-  fis'8 fis'16 fis' fis' fis' r |
-  fis'8 fis'16 fis' fis' fis' fis' fis' fis' fis' fis' |
-  cis''16..^"first theme" r64 \repeat unfold 3 { cis''16.. r64 }|
-  \times 4/5 { \repeat unfold 5 { a'16.. r64 } } |
-  fis'8 fis'16 fis' fis' fis' fis' fis' |
-  \times 2/3 { g'8-_ g'-_ g'-_ } \times 2/3 { d'8-_ d'-_ d'-_ } \times 2/3 { e'-_ fis'-_ cis'-_ } |
-  fis'8 fis'16 fis' fis' fis' fis' fis' fis' r |
-  fis'8 fis'16 fis' |
-  \times 2/3 { cis''4 cis'' cis'' cis'' } fis'16 fis' fis' fis' |
-  \times 2/3 { fisis'8 dis' gis' } \times 2/3 { ais' b' ais' } |
-  gis'16 gis' gis' gis' gis' cis' cis' |
-  \times 2/3 { a'8 a' a' } \times 2/3 { a' e' fis' } gis'8 gis' dis' |
-  fis'8 fis'16 fis' |
-  \times 4/5 { cis''8 cis'' b' cis'' dis'' } \times 4/5 { e'' dis'' cis'' b' a' }
-  gis'8 [ fis' ] \repeat unfold 3 { b'16.. r64 } |
-  fis'16 fis' fis' fis' |
-  \times 2/3 { b'8 cis'' dis'' } \times 2/3 { e'' dis'' cis'' } \times 2/3 { b' a' gis' } \times 2/3 { a' fis' } |
-  g'8 g' d' d' fis'16 fis' fis' fis' |
-  \times 2/3 { b'8 cis'' dis'' } \times 2/3 { e'' dis'' cis'' } \repeat unfold 3 { b'16.. r64 } |
-  fis'16 fis' fis' |
-  \times 2/3 { b'8 cis'' dis'' } \times 2/3 { e'' dis'' cis'' } \times 2/3 { b' a' } |
-  \repeat unfold 4 { \scoop a'8.. r32  } |  
-  \repeat unfold 4 { \scoop a'8.. r32  } |
-  \times 4/6 { \repeat unfold 6 { \scoop fis'8.. r32  } } |
-  \times 4/6 { \repeat unfold 6 { \scoop f'8.. r32  } } |
-  \repeat unfold 4 { \scoop a'8.. r32  } |  
-  \times 4/6 { \repeat unfold 4 { \scoop f'8.. r32  } } |
-  d'4-_ d'-_ d'8-_ d'8-_ d'16-. d'-. d'-. d'-. |
-  \times 2/3 { r4 d'8.. r32 d'8.. r32 } \times 2/3 { d'8.. r32 d'8.. r32 } |
-  d'4-_ d'-_ \times 2/3 { d'8.. r32 d'8.. r32 d'8.. r32 } |
-  \times 2/3 { d'8.. r32 d'8.. r32 d'8.. r32 } \repeat unfold 4 { d'16.. r64 } |
-  \once \override Score.RehearsalMark.break-visibility = ##(#t #t #f)
-  \mark \markup \fermata
-  cis''4-_ cis''-_ c''8-_ c''8-_ c''16-. c''-. c''-. c''-. |
-  \times 2/3 { r4 b'8.. r32 b'8.. r32 } \times 2/3 { c''8.. r32 c''8.. r32 c''8.. r32 } |
-  cis''4 r4 r2 |
+  fis'8 fis'16 [ fis' ] fis' [ fis' ] fis' [ fis' ] r8 |
+  fis'8 fis'16 [ fis' ] fis' [ fis' ] fis' [ fis' ] r8 |
+  fis'8 fis'16 [ fis' ] fis' [ fis' ] fis' [ fis' ] r8 |
+  fis'8 fis'16 [ fis' ] fis' [ fis' ] fis' [ fis' ] r8 |
+  fis'8 fis'16 [ fis' ] fis' [ fis' ] fis' [ fis' ] r8 |
+  fis'8 fis'16 [ fis' ] fis' [ fis' ] fis' [ fis' ] r8 |
 }
+
 voiceThree = {
   %\clef alto
   \key d \major
@@ -252,27 +195,13 @@ voiceThree = {
   \times 4/5 { e'4-_ \repeat unfold 4 { \scoop b'8.. r32 } } |
   \times 4/7 { \repeat unfold 7 { \scoop d'8..-_ r32 }} |
   \times 4/7 { \repeat unfold 7 { \scoop d'8..-_ r32 }} |
-  \clef "treble_8"
-  dis'8. [ dis'16 dis' ] dis' [ dis' ] d' [ d' ] r8
-  cis'8. [ cis'16 e' ] e' [ e' ] e' [ e' ] r16 |
-  dis'8. [ dis'16 dis' ] d' [ d' d' ] d' [ d' ] r16 |
-  cis'8 [ cis'16 ] cis' [ cis' cis'] e' [ e' e' ] |
-  \times 2/3 { e'4 e' fis' gis' } fis'8 e' cis' r |
-  dis'8 [ dis'16 dis' dis' ] dis' [ dis' dis' ] \scoop dis' [ dis' ] d' [ d' ] r |
-  cis'8 [ cis'16 cis' ] cis' [ cis' ] fis' [ fis']  e' [ e' ] dis'16 |
-  \times 2/3 { dis'8 [ dis' gis' ] } \times 2/3 { ais' [ b' ais' ] } gis'8 [ gis'16 ] dis' [ dis' dis' ]
-  \repeat unfold 3 { \scoop d'16.. r64 } r8 |
-  R1*5/16 |
-  dis'8. [ dis'16 dis' ] d' [ d' d' ] r |
-  e'8 e'16 r8 r8 r8. | %e'16 e'16 e'16 dis'16 dis' dis' dis' |
-  dis'16 dis' dis' \repeat unfold 3 { \scoop d'16.. r64 } |
-  R4. |
-  gis16. gis32. r r8. r r4 |
-  dis'8 [ dis'16 dis' dis' ] b [ b b ] r |
-  e'8 [ e'16 e' ] e' [ e' ] e' [ cis' cis' ] r |
-  cis'8 gis'8 gis'8. |
-  cis'4 fis' fis'2 ~ |
-  fis'8. r4. |
+  dis'8 dis'16 [ dis' ] dis' [ dis' ] dis' [ dis' ] r8 |
+  dis'8 dis'16 [ dis' ] dis' [ dis' ] dis' [ dis' ] r8 |
+  dis'8 dis'16 [ dis' ] dis' [ dis' ] dis' [ dis' ] r8 |
+  dis'8 dis'16 [ dis' ] dis' [ dis' ] dis' [ dis' ] r8 |
+  dis'8 dis'16 [ dis' ] dis' [ dis' ] dis' [ dis' ] r8 |
+  dis'8 dis'16 [ dis' ] dis' [ dis' ] dis' [ dis' ] r8 |
+
 }
 voiceFour = {
   %\clef tenor
@@ -317,27 +246,6 @@ voiceFour = {
   \repeat unfold 4 { dis'8.. r32 } |
   \times 2/3 { \repeat unfold 3 { \scoop b4.. r16 } } |
   \repeat unfold 4 { \scoop b8.. r32 } |
-  R1*11/16 |
-  R1*10/16 |
-  R1*11/16 |
-  R1*9/16 |
-  R1*7/6 |
-  b8 [ b16 b16 b16 ] b [ b b ] \scoop b [ b ] b [ b ] r |
-  ais8 [ ais16 ais ] ais [ ais ] cis' [ cis' ] b [ b ] ais |
-  \times 2/3 { ais8 ais dis' } \times 2/3 { dis' dis' cis' } b8 [ b16 ] b [ b b ] |
-  \repeat unfold 3 { \scoop a16.. r64 } r8 |
-  R1*5/16 |
-  R1*9/16 |
-  R1*10/16 |
-  R1*9/16 |
-  R1*6/16 |
-  R1*13/16 |
-  R1*9/16 |
-  R1*10/16 |
-  r4 ais8. ~ |
-  ais4. ais8 ~ ais2 |
-  b8 b16 b b cis' cis' cis' cis' |
-  \times 2/3 { \repeat unfold 3 { \scoop b8.. r32 } } \repeat unfold 2 { \scoop b16.. r64 } |
 }
 
 voiceFive = {
@@ -383,25 +291,6 @@ voiceFive = {
   \times 8/9 { \repeat unfold 9 gis,8-. } |
   \times 8/9 { gis,8-. \repeat unfold 8 cis8-. } |
   \times 8/9 { \repeat unfold 9 cis8-. } |
-  R1*11/16 |
-  R1*10/16 |
-  R1*11/16 |
-  R1*9/16 |
-  R1*7/6 |
-  R1*13/16 |
-  R1*11/16
-  R1*7/8 |
-  R2 |
-  R1*5/16 |
-  R1*9/16 |
-  R1*10/16 |
-  R1*9/16 |
-  R1*6/16 |
-  R1*13/16 |
-  b,8 b,16 b, b, d d d r |
-  cis8 [ cis16 cis ] cis [ cis ] e [ e e ] r |
-  fis8 fis,8 ~ fis,8. ~ |
-  fis,2.. r8 |
 }
 qcr =
 #(define-music-function
@@ -901,120 +790,9 @@ piecemarks = {
   \once \override Score.RehearsalMark.self-alignment-X = #LEFT
   \mark \markup \italic "rall."
   s1 \bar "||" |
-  \time 11/16
-  \tempo "doux et léger" 16=324
-  s1*11/16 |
-  \time 10/16
-  s1*10/16 |
-  \time 11/16
-  s1*11/16 |
-  \time 9/16
-  s1*9/16 |
-  \time 7/6
-  s1*7/6 |
-  \time 13/16
-  s1*13/16 |
-  \time 11/16
-  s1*11/16
-  \time 7/8
-  s1*7/8 |
-  \time 2/4
-  s2 |
-  \time 5/16
-  s1*5/16 |
-  \time 9/16
-  s1*9/16 |
-  \time 10/16
-  s1*10/16 |
-  \time 9/16
-  s1*9/16 |
-  \time 6/16
-  s1*6/16 |
-  \time 13/16
-  s1*13/16 |
-  \tempo "plus retenu" 16=244
-  \time 9/16
-  s1*9/16 |
-  \time 10/16
-  s1*10/16 |
-  \time 7/16
-  s1*7/16 |
-  \time 4/4
-  s1 |
-  \time 9/16
-  s1*9/16 |
-  \time 6/8
-  s2. |
-  \time 8/16
-  \tempo "posé" 16=220
-  s2 |
-  \time 14/16
-  s1*14/16 |
-  \time 5/16
-  \tempo "magistral" 4=172
-  s1*5/16 |
-  \time 11/24
-  s1*11/24 |
-  \time 8/16
-  \tempo "doux et léger" 16=324
-  s2 |
-  \time 18/16
-  s1*18/16 |
-  \time 9/16
-  s1*9/16 |
-  \time 7/16
-  s1*7/16 |
-  \time 11/16
-  s1*11/16 |
-  \time 2/4
-  s2 |
-  s2 |
-  \time 8/16
-  s2 |
-  \time 3/4
-  s2. |
-  \time 10/16
-  s1*10/16 |
-  \time 4/16
-  s4 |
-  \time 11/12
-  s1*11/12 |
-  \time 2/4
-  s2 |
-  \time 7/16
-  s1*7/16 |
-  \time 7/8
-  s1*7/8 |
-  \time 4/16
-  s4 |
-  \time 4/4
-  s1 |
   \time 5/8
-  s1*5/8 |
-  \time 4/16
-  s4 |
-  \time 11/12
-  s1*11/12 |
-  \time 3/4
-  s2. |
-  \time 7/8
-  s1*7/8 |
-  \time 3/16
-  s8. |
-  \time 4/6
-  s1*4/6 |
-  \time 4/4
-  \tempo "fort" 4=104
-  s1*5 |
-  \time 4/6
-  s1*4/6 |
-  \time 4/4
-  s1 |
-  \time 5/6
-  s1*5/6 |
-  \time 4/4
-  s1*5 | \bar "|."
-  
+  \tempo "doux et léger" 16=324
+  s1*5/8
 }
 \paper {
   ragged-right = ##f
