@@ -28,6 +28,7 @@ subPP = \markup { \center-align
 subPPd = #(make-dynamic-script subPP)
 
 
+
 parend =
 #(define-event-function (parser location dyn) (ly:event?)
    (make-dynamic-script
@@ -37,370 +38,8 @@ parend =
 	 \normal-text \italic \fontsize #2 )
        }
     #}))
+ugh = { s8^\p^\< s16\parend^\mf }
 
-voiceOne = {
-  \key d \major
-  \repeat unfold 4 { \scoop cis''8.. r32  } |
-  \times 2/3 { r4 \repeat unfold 2 { \scoop a'8.. r32 } } \scoop a'8.. r32 \repeat unfold 4 { a'16-. } |
-  \repeat unfold 2 { \scoop cis''8.. r32  } |
-  \times 2/3 { \repeat unfold 4 { \scoop a'8.. r32  } } |
-  \repeat unfold 2 { \scoop fis'8..-- r32  } \repeat unfold 2 { fis'8-_  } \repeat unfold 4 fis'16-.
-  \times 2/3 { r4 \repeat unfold 2 { \scoop fis'8.. r32 } } \times 2/3 { fis'4-_ fis'-_ fis'-_ }
-  \repeat unfold 2 { \scoop fis'8..-- r32  } \repeat unfold 2 { fis'8-_  }
-  \times 8/12 { \repeat unfold 6 { b'8-. [b'-.] }}
-  \repeat unfold 2 { fis''8..-- r32  } \repeat unfold 2 { fis''8-_  } \repeat unfold 4 fis''16-. |
-  \times 2/3 { r4 \repeat unfold 2 { \scoop e''8.. r32 } } \times 2/3 { \repeat unfold 3 e''4-_ } |
-  \repeat unfold 2 { d''8..--^\espressivo r32  } \times 4/5 { fis'8-_ [ fis'-_ fis'-_ fis'-! ] }
-  \times 2/3 { \repeat unfold 2 { cis''8. r16  } \repeat unfold 2 { c''8. r16  } r4 } |
-  \repeat unfold 2 { d''4-_  } fis'8 fis' \times 2/3 { fis'-. fis'-. fis'-. } |
-  cis''8.-_ cis''-. c''-_ c''-! |
-  b'4 \scoop b'8.. r32 \times 2/3 { fis'4-. fis' fis'-. } |
-  r8 bes'-. bes'-. bes' bes'-. r |
-  \repeat unfold 12 { b'16-! } \repeat unfold 4 { b'16-. } |
-  \repeat unfold 8 { b'16-. } \repeat unfold 4 { b'16 }  |
-  \repeat unfold 4 { b'16 [ b'16 b'16 ] } |
-  \repeat unfold 3 { b'16 [ b'16 b'16 ] } b'16 [ b'16 b'16 b'16 ] |
-  fis'4-_ fis'-_ fis'8-. fis'-. \times 4/5 { \repeat unfold 5 { fis'-. } } |
-  fis'8-. fis'-. \times 2/3 { fis'4-! fis'-! fis'-! } r |
-  a'4 ~ a'16.. r64 a'8 \footnote "" #'(0 . 0) "* Le \"r\" de \"re\" devrait disparaître progressivement."
-      gis'2 |
-  \repeat unfold 4 { gis'16 } \times 4/5 { \repeat unfold 5 { gis'16 } } \times 4/6 { \repeat unfold 6 { gis'16 } } \times 4/7 { \repeat unfold 7 { gis'16 } } |
-  \repeat unfold 8 { gis'32 } \times 4/7 { \repeat unfold 7 { gis'16 } } \times 4/6 { \repeat unfold 6 { gis'16 } } \times 4/5 { \repeat unfold 5 { gis'16 } }
-  \repeat unfold 3 { gis'16 } r16 r4 |
-  a'2 gis'4... r32 |
-  \times 2/3 { \repeat unfold 3 { \scoop ais'8.. r32 } } \repeat unfold 4 { \scoop ais'32. r64 } r4 |
-  b'4-_ b'4-_ b'32 r16. b'8 b'16-. b'16-. b'16-. b'16-. |
-  \times 2/3 { b'4-! \scoop b'8.. r32 \scoop b'8.. r32 } \times 2/3 { b'4-_ bes'4 ( a'4 ) } |
-  b'4 b'8 |
-  \times 2/3 { dis''4-_ dis''4-_ dis''4-_ } \times 2/3 { dis''4-_ dis''4-_ } |
-  \times 8/9 { \repeat unfold 8 cisis''8-_ } |
-  R2 |
-  \times 4/6 { \repeat unfold 3 { \scoop fis''8.. r32 } \repeat unfold 3 { \scoop fis''8.. r32 }} |
-  \scoop fis''16.. r64 fis''8-_ \repeat unfold 5 fis''8-_ fisis''8-_ |
-  fisis''8-_ fisis''8-_ fisis''8-_ fisis''8-_ fisis''2^\mordent |
-  r8 ais''4. ais''4.. r16 |
-  a'1 |
-  gis' |
-  \repeat unfold 4 R1*5/8 |
-  R2.*3 |
-  r8. gis' ~ gis'4. ~ gis' ~ |
-  gis'8 cis''2 ais'8 ~ |
-  ais'2 ~ ais'8 e''8 ~ |
-  e''2 ~ |
-  e''4. dis''4. gis'8. |
-  b'2 ~ b'8 ~ |
-  b' fis''8 ~ fis''4 ~ fis''2 ~ |
-  fis''4 gis''4 ~ gis''2 ~ |
-  \times 2/3 { gis''2 cis'' cis'' } |
-  \repeat unfold 4 { \scoop cis''8.. r32  } |
-  \times 4/6 { \repeat unfold 6 { \scoop a'8.. r32  } } |
-  \times 4/6 { \repeat unfold 6 { \scoop a'8.. r32  } } |
-  \repeat unfold 4 { \scoop cis''8.. r32  } |  
-  \times 4/6 { \repeat unfold 4 { \scoop a'8.. r32  } } |
-  fis'4-_ fis'-_ fis'8-_ fis'8-_ fis'16-. fis'-. fis'-. fis'-. |
-  \times 2/3 { r4 fis'8.. r32 fis'8.. r32 } \times 2/3 { fis'8.. r32 fis'8.. r32 } |
-  fis'4-_ fis'-_ \times 2/3 { fis'8.. r32 fis'8.. r32 fis'8.. r32 } |
-  \times 2/3 { fis'8.. r32 fis'8.. r32 fis'8.. r32 } \repeat unfold 4 { fis'16.. r64 } |
-  \once \override Score.RehearsalMark.break-visibility = ##(#t #t #f)
-  \mark \markup \fermata
-  fis''1 ~ |
-  fis'' ~ |
-  fis''4 r4 r2 |
-}
-voiceTwo = {
-  %\clef soprano
-  \key d \major
-  \repeat unfold 4 { \scoop a'8.. r32  } |
-  \times 2/3 { r4 \repeat unfold 2 { \scoop f'8.. r32 } } \scoop f'8.. r32 \repeat unfold 4 { f'16-. } |
-  \repeat unfold 2 { \scoop a'8.. r32  } |
-  \times 2/3 { \repeat unfold 4 { \scoop f'8.. r32  } } |
-  \repeat unfold 2 { \scoop d'8..-- r32  } \repeat unfold 2 { d'8-_  } \repeat unfold 4 d'16-. |
-  \times 2/3 { r4 \repeat unfold 2 { \scoop d'8.. r32 } } \times 2/3 { d'4-_ d'-_ d'-_ }
-  \repeat unfold 2 { \scoop d'8..-- r32  } \repeat unfold 2 { d'8-_  }
-  \times 8/12 { \repeat unfold 6 { fis'8-. [fis'-.] }}
-  \repeat unfold 2 { d''8..-- r32  } \repeat unfold 2 { d''8-_  } \repeat unfold 4 d''16-. |
-  \times 2/3 { r4 \repeat unfold 2 { \scoop cis''8.. r32 } } \times 2/3 { \repeat unfold 3 c''4-_ } |
-  \repeat unfold 2 { bes'8..--^\espressivo r32  } \times 4/5 { d'8-_ [ d'-_ d'-_ d'-! ] }
-  \times 2/3 { \repeat unfold 2 { a'8. r16  } \repeat unfold 2 { a'8. r16  } r4 } |
-  \repeat unfold 2 { b'4-_  } d'8 d' \times 2/3 { d'-. d'-. d'-. } |
-  ais'8.-_ ais'-. a'-_ a'-! |
-  gis'4 \scoop gis'8.. r32 \times 2/3 { d'4-. d' d'-. } |
-  r8 g'-. g'-. fis' fis'-. r |
-  \repeat unfold 12 { fis'16-! } \repeat unfold 4 { fis'16-. } |
-  \repeat unfold 8 { fis'16-. } \repeat unfold 4 { fis'16 }  |
-  \repeat unfold 4 { fis'16 [ fis'16 fis'16 ] } |
-  \repeat unfold 3 { fis'16 [ fis'16 fis'16 ] } fis'16 [ fis'16 fis'16 fis'16 ] |
-  d'4-_ d'-_ d'8-. d'-. \times 4/5 { \repeat unfold 5 { d'-. } } |
-  d'8-. d'-. \times 2/3 { d'4-! d'-! d'-! } r |
-  fis'4 ~ fis'16.. r64 fis'8 eis'2 |
-  \repeat unfold 4 { eis'16 } \repeat unfold 4 { eis'16 } \times 4/5 { \repeat unfold 5 { eis'16 } } \times 4/6 { \repeat unfold 6 { eis'16 } } |
-  \times 4/7 { \repeat unfold 7 { eis'16 } } \repeat unfold 8 { eis'32 } \times 4/7 { \repeat unfold 7 { eis'16 } } \times 4/6 { \repeat unfold 6 { eis'16 } } |
-  \times 4/5 { \repeat unfold 4 { eis'16 } r } r4 |
-  fis'2 eis'4... r32 |
-  \times 2/3 { \repeat unfold 3 { \scoop gis'8.. r32 } } \repeat unfold 4 { \scoop fisis'32. r64 } r4 |
-  ais'4-_ ais'4-_ ais'32 r16. ais'8 ais'16-. ais'16-. ais'16-. ais'16-. |
-  \times 2/3 { ais'4-! \scoop ais'8.. r32 \scoop ais'8.. r32 } \times 2/3 { ais'4-_ a'4 ( gis'4 ) } |
-  ais'4 ais'8
-  \times 2/3 { b'4-_ b'-_ b'-_ } \times 2/3 { b'4-_ b'-_ }
-  \times 8/9 { \repeat unfold 8 ais'8-_ } |
-  b'4^\mordent \scoop b'16.. r64 \scoop b'16.. r64 |
-  \times 4/7 { \repeat unfold 7 { \scoop b'8.. r32 } } |
-  \times 8/10 { \repeat unfold 10 b'8-. } |
-  \times 4/5 { ais'4-_ ais'-_ ais'-_ ais'-_ ais'-_ } |
-  d''2^\mordent \times 2/3 { \repeat unfold 3 { \scoop d''8.. r32 }} |
-  \repeat unfold 4 { \scoop fis'8.. r32 } |
-  \times 4/6 { \repeat unfold 6 eis'4-_ } |
-  fis'8 [ fis'16 fis' ] fis' [ fis' ] fis' [ fis' ] r8 |
-  fis'8 [ fis'16 ] fis' [ fis' fis' fis' fis' ] r8 |
-  fis'8 [ fis'16 fis' ] fis' [ fis' ] fis' [ fis' ] r8 |
-  fis'8 [ fis'16 ] fis' [ fis' fis' fis' fis' ] r8 |
-  fis'8 [ fis'16 fis' ] fis' [ fis' ] fis' [ fis' ] fis' [ fis' ] r8 |
-  fis'8 [ fis'16 ] fis' [ fis'8 fis' fis' fis' ] |
-  fis'8 [ fis'16 fis' ] fis' [ fis' ] fis'8. fis'8. |
-  fis'8. fis'8. fis'8. fis'8. fis'8 fis' fis' |
-  fis'4 fis' fis' |
-  fis'8. fis' fis' fis' |
-  fis'4 fis' |
-  fis'8. fis' fis' fis' fis' |
-  fis'4 fis' fis'8 |
-  \repeat unfold 4 { \scoop a'8.. r32  } |
-  \repeat unfold 4 { \scoop a'8.. r32  } |
-  \repeat unfold 4 { \scoop a'8.. r32  } |
-  \repeat unfold 4 { \scoop a'8.. r32  } |
-  \times 4/6 { \repeat unfold 6 { \scoop fis'8.. r32  } } |
-  \times 4/6 { \repeat unfold 6 { \scoop fis'8.. r32  } } |
-  \repeat unfold 4 { \scoop a'8.. r32  } |  
-  \times 4/6 { \repeat unfold 4 { \scoop fis'8.. r32  } } |
-  d'4-_ d'-_ d'8-_ d'8-_ d'16-. d'-. d'-. d'-. |
-  \times 2/3 { r4 d'8.. r32 d'8.. r32 } \times 2/3 { d'8.. r32 d'8.. r32 } |
-  d'4-_ d'-_ \times 2/3 { d'8.. r32 d'8.. r32 d'8.. r32 } |
-  \times 2/3 { d'8.. r32 d'8.. r32 d'8.. r32 } \repeat unfold 4 { d'16.. r64 } |
-  \once \override Score.RehearsalMark.break-visibility = ##(#t #t #f)
-  \mark \markup \fermata
-  cis''4-_ cis''-_ c''8-_ c''8-_ c''16-. c''-. c''-. c''-. |
-  \times 2/3 { r4 b'8.. r32 b'8.. r32 } \times 2/3 { c''8.. r32 c''8.. r32 c''8.. r32 } |
-  cis''4 r4 r2 |
-}
-
-voiceThree = {
-  %\clef alto
-  \key d \major
-  \scoop fis'8.. r32  \scoop fis'8.. r32  \scoop fis'8.. r32  \scoop fis'8.. r32 |
-  \times 2/3 { r4 \repeat unfold 2 { \scoop d'8.. r32 } } \scoop d'8.. r32 d'16-. d'16-. d'16-. d'16-. |
-  \repeat unfold 2 { \scoop fis'8.. r32  } |
-  \times 2/3 { \repeat unfold 4 { \scoop d'8.. r32  } } |
-  \repeat unfold 2 { \scoop bes8..-- r32  } \repeat unfold 2 { b8-_  } \repeat unfold 4 b16-. |
-  \times 2/3 { r4 \repeat unfold 2 { \scoop cis'8.. r32 } } \times 2/3 { c'4-_ c'-_ c'-_ }
-  \repeat unfold 2 { \scoop bes8..-- r32  } \repeat unfold 2 { b8-_  }
-  \times 8/12 { \repeat unfold 6 { e'8-. [e'-.] }}
-  \repeat unfold 2 { b'8..-- r32  } \repeat unfold 2 { bes'8-_  } \repeat unfold 4 bes'16-. |
-  \times 2/3 { r4 \repeat unfold 2 { \scoop a'8.. r32 } } \times 2/3 { \repeat unfold 3 a'4-_ } |
-  \repeat unfold 2 { g'8..--^\espressivo r32  } \times 4/5 { bes8-_ [ bes-_ bes-_ bes-! ] }
-  \times 2/3 { \repeat unfold 2 { fis'8. r16  } \repeat unfold 2 { fis'8. r16  } r4 } |
-  \repeat unfold 2 { fis'4-_  } bes8 bes \times 2/3 { bes-. bes-. bes-. } |
-  gis'8.-_ gis'-. g'-_ g'-! |
-  d'4 d'8.. r32 \times 2/3 { bes'4-. bes' bes'-. } |
-  r8 e'-. e'-. ees' ees'-. r |
-  \repeat unfold 12 { e'16-! } \repeat unfold 4 { e'16-. } |
-  \repeat unfold 8 { e'16-. } \repeat unfold 4 { e'16 }  |
-  \repeat unfold 4 { e'16 [ e'16 e'16 ] } |
-  \repeat unfold 3 { e'16 [ e'16 e'16 ] } e'16 [ e'16 e'16 e'16 ] |
-  bes4-_ bes-_ b8-. b-. \times 4/5 { \repeat unfold 5 { b-. } } |
-  cis'8-. cis'-. \times 2/3 { c'4-! c'-! c'-! } r |
-  d'4 ~ d'16.. r64 d'8 d'2 |
-  \repeat unfold 4 { d'16 } \repeat unfold 4 { d'16 } \repeat unfold 4 { d'16 } \times 4/5 { \repeat unfold 5 { d'16 } } |
-  \times 4/6 { \repeat unfold 6 { d'16 } } \times 4/5 { \repeat unfold 5 { d'16 } } \repeat unfold 4 { d'16 } \times 2/3 { \repeat unfold 3 { d'8 } } |
-  \times 2/3 { \repeat unfold 2 { d'8 } r } r4 |
-  d'2 d'4... r32 |
-  \times 2/3 { \repeat unfold 3 { \scoop dis'8.. r32 } } \repeat unfold 4 { \scoop disis'32. r64 } r4 |
-  gis'4-_ gis'4-_ gis'32 r16. gis'8 gis'16-. gis'16-. gis'16-. gis'16-. |
-  \times 2/3 { gis'4-! \scoop gis'8.. r32 \scoop gis'8.. r32 } \times 2/3 { gis'4-_ g'4 ( fis'4 ) } |
-  fis'4 fis'8 |
-  \times 2/3 { \repeat unfold 3 gis'4-_ } \times 2/3 { gis'4-_ gis'-_ } |
-  \times 8/9 { \repeat unfold 8 gisis'8-_ }
-  R2 |
-  dis'2^\mordent \repeat unfold 3 dis'8-_ e'8-_ |
-  \times 4/7 { \repeat unfold 7 e'4-_ } |
-  \times 4/7 { \repeat unfold 7 e'4-_ } |
-  \times 4/5 { e'4-_ \repeat unfold 4 { \scoop b'8.. r32 } } |
-  \times 4/7 { \repeat unfold 7 { \scoop d'8..-_ r32 }} |
-  \times 4/7 { \repeat unfold 7 { \scoop d'8..-_ r32 }} |
-  dis'8 [ dis'16 dis' ] dis' [ dis' ] d' [ d' ] r8 |
-  cis'8 [ cis'16 ] e' [ e' e' e' e' ] r8 |
-  dis'8 [ dis'16 dis' ] dis' [ dis' ] b [ b ] r8 |
-  e'8 [ e'16 ] e' [ e' e' e' e' ] r8 |
-  dis'8 [ dis'16 dis' ] dis' [ dis' ] d' [ d' ] d' [ d' ] r8 |
-  cis'8 [ cis'16 ] e' [ e'8 e' e' e' ] |
-  dis'8. dis' dis' d' |
-  d'8 d' d' cis'4 cis' e' |
-  e'8. e' e' e' |
-  dis'4 dis' dis' |
-  d'8 d' d' d' |
-  cis'4 cis' e' e'8. |
-  e'8. e'8. e'4 |
-  \times 2/3 { \repeat unfold 3 { \scoop dis'4.. r16 } } |
-  \repeat unfold 2 { \scoop d'8.. r32 } \repeat unfold 2 { \scoop fis'8.. r32 } |
-  \repeat unfold 4 { \scoop fis'8.. r32 } |
-  \repeat unfold 4 { \scoop fis'8.. r32  } |
-  \times 4/6 { \repeat unfold 6 { \scoop d'8.. r32  } } |
-  \times 4/6 { \repeat unfold 6 { \scoop d'8.. r32  } } |
-  \repeat unfold 4 { \scoop fis'8.. r32  } |  
-  \times 4/6 { \repeat unfold 4 { \scoop d'8.. r32  } } |
-  bes4-_ bes-_ b8-_ b8-_ b16-. b-. b-. b-. |
-  \times 2/3 { r4 cis'8.. r32 cis'8.. r32 } \times 2/3 { c'8.. r32 c'8.. r32 } |
-  bes4-_ bes-_ \times 2/3 { b8.. r32 b8.. r32 b8.. r32 } |
-  \times 2/3 { cis'8.. r32 cis'8.. r32 c'8.. r32 } \repeat unfold 4 { c'16.. r64 } |
-  \once \override Score.RehearsalMark.break-visibility = ##(#t #t #f)
-  \mark \markup \fermata
-  b'4-_ b'-_ bes'8-_ bes'8-_ bes'16-. bes'-. bes'-. bes'-. |
-  \times 2/3 { r4 a'8.. r32 a'8.. r32 } \times 2/3 { bes'8.. r32 bes'8.. r32 bes'8.. r32 } |
-  b'4 r4 r2 |
-}
-voiceFour = {
-  %\clef tenor
-  \clef "treble_8"
-  \key d \major
-  \scoop d'8.. r32 \scoop d'8.. r32  \scoop d'8.. r32  \scoop d'8.. r32 |
-  \times 2/3 { r4 \repeat unfold 2 { \scoop bes8.. r32 }  } \scoop bes8.. r32 bes16-. bes16-. bes16-. bes16-. |
-  \repeat unfold 2 { \scoop d'8.. r32  } |
-  \times 2/3 { \repeat unfold 4 { \scoop bes8.. r32  } } |
-  \repeat unfold 2 { \scoop g8..-- r32  } \repeat unfold 2 { g8-_  } \repeat unfold 4 g16-. |
-  \times 2/3 { r4 \repeat unfold 2 { \scoop g8.. r32 } } \times 2/3 { g4-_ g-_ g-_ }
-  \repeat unfold 2 { \scoop g8..-- r32  } \repeat unfold 2 { g8-_  }
-  \times 8/12 { \repeat unfold 6 { c'8-. [c'-.] }}
-  \repeat unfold 2 { g'8..-- r32  } \repeat unfold 2 { g'8-_  } \repeat unfold 4 g'16-. |
-  \times 2/3 { r4 \repeat unfold 2 { \scoop fis'8.. r32 } } \times 2/3 { \repeat unfold 3 fis'4-_ } |
-  \repeat unfold 2 { e'8..--^\espressivo r32  } \times 4/5 { g8-_ [ g-_ g-_ g-! ] }
-  \times 2/3 { \repeat unfold 2 { e'8. r16  } \repeat unfold 2 { ees'8. r16  } r4 } |
-  \repeat unfold 2 { e'4-_  } a8 a \times 2/3 { a-. a-. a-. } |
-  e'8.-_ e'-. ees'-_ ees'-! |
-  cis'4 \scoop cis'8.. r32 \times 2/3 { g4-. g g-. } |
-  r8 cis'-. cis'-. c'-. c'-. r |
-  \repeat unfold 12 { d'16-! } \repeat unfold 4 { d'16-. } |
-  \repeat unfold 8 { d'16-. } \repeat unfold 4 { d'16 }  |
-  \repeat unfold 4 { cis'16 [ cis'16 cis'16 ] } |
-  \repeat unfold 3 { cis'16 [ cis'16 cis'16 ] } cis'16 [ cis'16 cis'16 cis'16 ] |
-  g4-_ g-_ g8-. g-. \times 4/5 { \repeat unfold 5 { g-. } } |
-  g8-. g-. \times 2/3 { g4-! g-! g-! } r |
-  b4 ~ b16.. r64 b8 b2 |
-  \repeat unfold 8 { b16-- \repeat unfold 3 { b16 } }
-  b16-- \repeat unfold 2 { b16 } r16 r4 |
-  b2 b4... r32 |
-  \times 2/3 { \repeat unfold 3 { \scoop cis'8.. r32 } } \repeat unfold 4 { \scoop cisis'32. r64 } r4 |
-  fis'4-_ fis'4-_ fis'32 r16. fis'8 fis'16-. fis'16-. fis'16-. fis'16-. |
-  \times 2/3 { fis'4-! \scoop fis'8.. r32 \scoop fis'8.. r32 } \times 2/3 { fis'4-_ f'4 ( e'4 ) } |
-  dis'4 dis'8 |
-  \times 2/3 { ais4-_ ais-_ ais-_ } \times 2/3 { ais-_ ais-_ } |
-  \times 8/9 { \repeat unfold 8 eisis'8-_ } |
-  R2 |
-  \times 2/3 { r1 \scoop ais4.. r16 } |
-  \repeat unfold 2 { \scoop ais4.. r16 } |
-  \times 8/9 { r8 \repeat unfold 6 b-_  dis'-_ dis'-_ } |
-  \repeat unfold 4 { dis'8.. r32 } |
-  \times 2/3 { \repeat unfold 3 { \scoop b4.. r16 } } |
-  \repeat unfold 4 { \scoop b8.. r32 } |
-  \repeat unfold 4 R1*5/8  |
-  R2. |
-  R2. |
-  r4. b4 b8 ~ |
-  b8 a4. a4. a4 |
-  b8 b b b b b |
-  b b b b gis gis |
-  gis8. gis8. gis8 ~ |
-  gis16 gis8 gis gis gis gis cis' cis' |
-  cis' cis' cis' cis' fis |
-  fis b b b b b b b |
-  \times 2/3 { b4 b b } \times 2/3 { d' d' d' } |
-  d'4 d' d' d' |
-  \repeat unfold 4 { \scoop d'8.. r32  } |
-  \times 4/6 { \repeat unfold 6 { \scoop bes8.. r32  } } |
-  \times 4/6 { \repeat unfold 6 { \scoop bes8.. r32  } } |
-  \repeat unfold 4 { \scoop d'8.. r32  } |  
-  \times 4/6 { \repeat unfold 4 { \scoop bes8.. r32  } } |
-  g4-_ g-_ g8-_ g8-_ g16-. g-. g-. g-. |
-  \times 2/3 { r4 g8.. r32 g8.. r32 } \times 2/3 { g8.. r32 g8.. r32 } |
-  g4-_ g-_ \times 2/3 { g8.. r32 g8.. r32 g8.. r32 } |
-  \times 2/3 { g8.. r32 g8.. r32 g8.. r32 } \repeat unfold 4 { g16.. r64 } |
-  \once \override Score.RehearsalMark.break-visibility = ##(#t #t #f)
-  \mark \markup \fermata
-  gis'4-_ gis'-_ g'8-_ g'8-_ g'16-. g'-. g'-. g'-. |
-  \times 2/3 { r4 fis'8.. r32 fis'8.. r32 } \times 2/3 { g'8.. r32 g'8.. r32 g'8.. r32 } |
-  gis'4 r4 r2 |}
-
-voiceFive = {
-  \clef bass
-  \key d \major
-  \scoop bes8.. r32  \scoop bes8.. r32  \scoop bes8.. r32  \scoop bes8.. r32  |
-  \times 2/3 { r4 \repeat unfold 2 { \scoop g8.. r32 }  } \scoop g8.. r32 g16-. g16-. g16-. g16-. |
-  \repeat unfold 2 { \scoop bes8.. r32  } |
-  \times 2/3 { \repeat unfold 4 { \scoop g8.. r32  } } |
-  \repeat unfold 2 { \scoop a,8..-- r32  } \repeat unfold 2 { a,8-_  } \repeat unfold 4 a,16-. |
-  \times 2/3 { r4 \repeat unfold 2 { \scoop a,8.. r32 } } \times 2/3 { a,4-_ a,-_ a,-_ }
-  \repeat unfold 2 { \scoop a,8..-- r32  } \repeat unfold 2 { a,8-_  } |
-  \times 8/12 { \repeat unfold 6 { d8-. [d-.] }} |
-  R1 |
-  R1 |
-  \repeat unfold 2 { a,8..--^\espressivo r32  } \times 4/5 { a,8-_ [ a,-_ a,-_ a,-! ] } |
-  \times 2/3 { \repeat unfold 2 { d8. r16  } \repeat unfold 2 { d8. r16  } r4 } |
-  \repeat unfold 2 { g,4-_  } g,8 g, \times 2/3 { g,-. g,-. g,-. } |
-  fis,8.-_ fis,-. f,-_ f,-! |
-  e,4 \scoop e,8.. r32 \times 2/3 { a,4-. a, a,-. } |
-  r8 d-. d-. d-. d-. r |
-  \repeat unfold 12 { g,16-! } \repeat unfold 4 { g,16-. } |
-  \repeat unfold 8 { g,16-. } \repeat unfold 4 { g,16 }  |
-  \repeat unfold 4 { g,16 [ g,16 g,16 ] } |
-  \repeat unfold 3 { g,16 [ g,16 g,16 ] } g,16 [ g,16 g,16 g,16 ] |
-  a,4-_ a,-_ a,8-. a,-. \times 4/5 { \repeat unfold 5 { a,-. } } |
-  a,8-. a,-. \times 2/3 { a,4-! a,-! a,-! } r |
-  cis4 ~ cis16.. r64 cis8 cis2 |
-  fis4 ~ \times 2/3 { fis8-_ fis-_ fis-_ } \times 2/3 { fis-_ fis-_ fis-_ } \times 2/3 { fis-_ fis-_ fis-_ } |
-  fis8-_ fis-_ fis-_ fis-_ \times 2/3 { fis4-_ fis-_ fis-_ } |
-  fis-_ r |
-  cis2 cis4... r32 |
-  R1 |
-  dis'4-_ dis'4-_ dis'32 r16. dis'8 dis'16-. dis'16-. dis'16-. dis'16-. |
-  \times 2/3 { dis'4-! \scoop dis'8.. r32 \scoop dis'8.. r32 } \times 2/3 { dis'4-_ d'4 ( cis'4 ) } |
-  gis4 gis8 |
-  \times 2/3 { fisis4-_ fisis-_ fisis-_ } \times 2/3 { fisis-_ fisis-_ } |
-  \times 8/9 { \repeat unfold 8 { fisis8-_ } } |
-  R2 |
-  \repeat unfold 4 { \scoop gis,8.. r32 } |
-  \times 4/5 { \repeat unfold 5 { \scoop gis,8.. r32 } } |
-  gis,2^\mordent \times 2/3 { \repeat unfold 3 { gis,8.. r32 }} |
-  \times 8/9 { \repeat unfold 9 gis,8-. } |
-  \times 8/9 { gis,8-. \repeat unfold 8 cis8-. } |
-  \times 8/9 { \repeat unfold 9 cis8-. } |
-  R1*5/8 |
-  R1*5/8 |
-  b,8 b,16 [ b, ] b, [ b, ] d [ d ] r8 |
-  cis8 [ cis16  ] ais, [ ais, ais, ais, ais, ] r8 |
-  b,8. b, b, gis,16. gis, |
-  gis,8 gis, cis8 cis8. cis |
-  cis8 cis fis,4 fis, |
-  b,4. b, b, |
-  d4. d |
-  cis cis |
-  \times 2/3 { ais,4 ais, ais, } |
-  b,4. b, b,8. ~ |
-  b,8. gis, gis, gis,16 ~ |
-  gis,8 cis4 cis cis cis8 ~ |
-  cis cis4 cis ais, ais,8 ~ |
-  \times 2/3 { ais,4 \scoop bes8.. r32  \scoop bes8.. r32  } \scoop bes8.. r32  \scoop bes8.. r32  |
-  \repeat unfold 4 { \scoop bes8.. r32  } |
-  \times 4/6 { \repeat unfold 6 { \scoop g8.. r32  } } |
-  \times 4/6 { \repeat unfold 6 { \scoop g8.. r32  } } |
-  \repeat unfold 4 { \scoop bes8.. r32  } |  
-  \times 4/6 { \repeat unfold 4 { \scoop g8.. r32  } } |
-  a,4-_ a,-_ a,8-_ a,8-_ a,16-. a,-. a,-. a,-. |
-  \times 2/3 { r4 a,8.. r32 a,8.. r32 } \times 2/3 { a,8.. r32 a,8.. r32 } |
-  a,4-_ a,-_ \times 2/3 { a,8.. r32 a,8.. r32 a,8.. r32 } |
-  \times 2/3 { a,8.. r32 a,8.. r32 a,8.. r32 } \repeat unfold 4 { a,16.. r64 } |
-  \once \override Score.RehearsalMark.break-visibility = ##(#t #t #f)
-  \mark \markup \fermata
-  e'4-_ e'-_ ees'8-_ ees'8-_ ees'16-. ees'-. ees'-. ees'-. |
-  \times 2/3 { r4 d'8.. r32 d'8.. r32 } \times 2/3 { ees'8.. r32 ees'8.. r32 ees'8.. r32 } |
-  e'4 r4 r2 |
-}
 qcr =
 #(define-music-function
      (parser location arg1)
@@ -531,6 +170,373 @@ qtripcrmf =
 \repeat unfold $arg1 { s8..*2/3^\p^\< s32*2/3\parend^\mf }
 #})
 
+
+voiceOne = {
+  \key d \major
+  \repeat unfold 4 { \scoop cis''8.. r32  } |
+  \times 2/3 { r4 \repeat unfold 2 { \scoop a'8.. r32 } } \scoop a'8.. r32 \repeat unfold 4 { a'16-. } |
+  \repeat unfold 2 { \scoop cis''8.. r32  } |
+  \times 2/3 { \repeat unfold 4 { \scoop a'8.. r32  } } |
+  \repeat unfold 2 { \scoop fis'8..-- r32  } \repeat unfold 2 { fis'8-_  } \repeat unfold 4 fis'16-.
+  \times 2/3 { r4 \repeat unfold 2 { \scoop fis'8.. r32 } } \times 2/3 { fis'4-_ fis'-_ fis'-_ }
+  \repeat unfold 2 { \scoop fis'8..-- r32  } \repeat unfold 2 { fis'8-_  }
+  \times 8/12 { \repeat unfold 6 { b'8-. [b'-.] }}
+  \repeat unfold 2 { fis''8..-- r32  } \repeat unfold 2 { fis''8-_  } \repeat unfold 4 fis''16-. |
+  \times 2/3 { r4 \repeat unfold 2 { \scoop e''8.. r32 } } \times 2/3 { \repeat unfold 3 e''4-_ } |
+  \repeat unfold 2 { d''8..--^\espressivo r32  } \times 4/5 { fis'8-_ [ fis'-_ fis'-_ fis'-! ] }
+  \times 2/3 { \repeat unfold 2 { cis''8. r16  } \repeat unfold 2 { c''8. r16  } r4 } |
+  \repeat unfold 2 { d''4-_  } fis'8 fis' \times 2/3 { fis'-. fis'-. fis'-. } |
+  cis''8.-_ cis''-. c''-_ c''-! |
+  b'4 \scoop b'8.. r32 \times 2/3 { fis'4-. fis' fis'-. } |
+  r8 bes'-. bes'-. bes' bes'-. r |
+  \repeat unfold 12 { b'16-! } \repeat unfold 4 { b'16-. } |
+  \repeat unfold 8 { b'16-. } \repeat unfold 4 { b'16 }  |
+  \repeat unfold 4 { b'16 [ b'16 b'16 ] } |
+  \repeat unfold 3 { b'16 [ b'16 b'16 ] } b'16 [ b'16 b'16 b'16 ] |
+  fis'4-_ fis'-_ fis'8-. fis'-. \times 4/5 { \repeat unfold 5 { fis'-. } } |
+  fis'8-. fis'-. \times 2/3 { fis'4-! fis'-! fis'-! } r |
+  a'4 ~ a'16.. r64 a'8 \footnote "" #'(0 . 0) "* Le \"r\" de \"re\" devrait disparaître progressivement."
+      gis'2 |
+  \repeat unfold 4 { gis'16 } \times 4/5 { \repeat unfold 5 { gis'16 } } \times 4/6 { \repeat unfold 6 { gis'16 } } \times 4/7 { \repeat unfold 7 { gis'16 } } |
+  \repeat unfold 8 { gis'32 } \times 4/7 { \repeat unfold 7 { gis'16 } } \times 4/6 { \repeat unfold 6 { gis'16 } } \times 4/5 { \repeat unfold 5 { gis'16 } }
+  \repeat unfold 3 { gis'16 } r16 r4 |
+  a'2 gis'4... r32 |
+  \times 2/3 { \repeat unfold 3 { \scoop ais'8.. r32 } } \repeat unfold 4 { \scoop ais'32. r64 } r4 |
+  b'4-_ b'4-_ b'32 r16. b'8 b'16-. b'16-. b'16-. b'16-. |
+  \times 2/3 { b'4-! \scoop b'8.. r32 \scoop b'8.. r32 } \times 2/3 { b'4-_ bes'4 ( a'4 ) } |
+  b'4 b'8 |
+  \times 2/3 { dis''4-_ dis''4-_ dis''4-_ } \times 2/3 { dis''4-_ dis''4-_ } |
+  \times 8/9 { \repeat unfold 8 cisis''8-_ } |
+  R2 |
+  \times 4/6 { \repeat unfold 3 { \scoop fis''8.. r32 } \repeat unfold 3 { \scoop fis''8.. r32 }} |
+  \scoop fis''16.. r64 fis''8-_ \repeat unfold 5 fis''8-_ fisis''8-_ |
+  fisis''8-_ fisis''8-_ fisis''8-_ fisis''8-_ fisis''2^\mordent |
+  r8 ais''4. ais''4.. r16 |
+  a'1 |
+  gis' |
+  \repeat unfold 4 R1*5/8 |
+  R2.*3 |
+  r8. gis'^\pp^\< ~ gis'4. ~ gis'^\> ~ |
+  gis'8 cis''2^\p << { ais'8 ~ |
+  ais'2 ~ ais'8 } { s4.^\pp^\< s4.^\> } >> << { e''8 ~ |
+  e''2 ~ |
+  e''4. } {s8^\p s4 s4^\< s4.^\> } >> dis''4.^\p gis'8. |
+  << { b'2 ~ b'8 ~ |
+  b' } { s4.^\< s4.^\> } >> fis''8^\p ~ fis''4 ~ fis''2 ~ |
+  fis''4 gis''4^\< ~ gis''2 ~ |
+  \times 2/3 { gis''2^\> << { \scoop cis''4.. r16 \scoop cis''4.. r16 } { \repeat unfold 2 { s4..^\p^\< s16\parend^\f } } >> } |
+  << { \repeat unfold 4 { \scoop cis''8.. r32  }  } { \qcr 4 } >> |
+  \times 4/6 { \repeat unfold 6 { \scoop a'8.. r32  } } |
+  \times 4/6 { \repeat unfold 6 { \scoop a'8.. r32  } } |
+  \repeat unfold 4 { \scoop cis''8.. r32  } |  
+  \times 4/6 { \repeat unfold 4 { \scoop a'8.. r32  } } |
+  fis'4-_ fis'-_ fis'8-_ fis'8-_ fis'16-. fis'-. fis'-. fis'-. |
+  \times 2/3 { r4 \scoop fis'8.. r32 \scoop fis'8.. r32 } \times 2/3 { \scoop fis'8.. r32 \scoop fis'8.. r32 } |
+  fis'4-_ fis'-_ \times 2/3 { \scoop fis'8.. r32 \scoop fis'8.. r32 \scoop fis'8.. r32 } |
+  \times 2/3 { \scoop fis'8.. r32 \scoop fis'8.. r32 \scoop fis'8.. r32 } \repeat unfold 4 { \scoop fis'16.. r64 } |
+  \once \override Score.RehearsalMark.break-visibility = ##(#t #t #f)
+  \mark \markup \fermata
+  fis''1^\p ~ |
+  fis'' ~ |
+  fis''4 r4 r2 |
+}
+voiceTwo = {
+  %\clef soprano
+  \key d \major
+  \repeat unfold 4 { \scoop a'8.. r32  } |
+  \times 2/3 { r4 \repeat unfold 2 { \scoop f'8.. r32 } } \scoop f'8.. r32 \repeat unfold 4 { f'16-. } |
+  \repeat unfold 2 { \scoop a'8.. r32  } |
+  \times 2/3 { \repeat unfold 4 { \scoop f'8.. r32  } } |
+  \repeat unfold 2 { \scoop d'8..-- r32  } \repeat unfold 2 { d'8-_  } \repeat unfold 4 d'16-. |
+  \times 2/3 { r4 \repeat unfold 2 { \scoop d'8.. r32 } } \times 2/3 { d'4-_ d'-_ d'-_ }
+  \repeat unfold 2 { \scoop d'8..-- r32  } \repeat unfold 2 { d'8-_  }
+  \times 8/12 { \repeat unfold 6 { fis'8-. [fis'-.] }}
+  \repeat unfold 2 { d''8..-- r32  } \repeat unfold 2 { d''8-_  } \repeat unfold 4 d''16-. |
+  \times 2/3 { r4 \repeat unfold 2 { \scoop cis''8.. r32 } } \times 2/3 { \repeat unfold 3 c''4-_ } |
+  \repeat unfold 2 { bes'8..--^\espressivo r32  } \times 4/5 { d'8-_ [ d'-_ d'-_ d'-! ] }
+  \times 2/3 { \repeat unfold 2 { a'8. r16  } \repeat unfold 2 { a'8. r16  } r4 } |
+  \repeat unfold 2 { b'4-_  } d'8 d' \times 2/3 { d'-. d'-. d'-. } |
+  ais'8.-_ ais'-. a'-_ a'-! |
+  gis'4 \scoop gis'8.. r32 \times 2/3 { d'4-. d' d'-. } |
+  r8 g'-. g'-. fis' fis'-. r |
+  \repeat unfold 12 { fis'16-! } \repeat unfold 4 { fis'16-. } |
+  \repeat unfold 8 { fis'16-. } \repeat unfold 4 { fis'16 }  |
+  \repeat unfold 4 { fis'16 [ fis'16 fis'16 ] } |
+  \repeat unfold 3 { fis'16 [ fis'16 fis'16 ] } fis'16 [ fis'16 fis'16 fis'16 ] |
+  d'4-_ d'-_ d'8-. d'-. \times 4/5 { \repeat unfold 5 { d'-. } } |
+  d'8-. d'-. \times 2/3 { d'4-! d'-! d'-! } r |
+  fis'4 ~ fis'16.. r64 fis'8 eis'2 |
+  \repeat unfold 4 { eis'16 } \repeat unfold 4 { eis'16 } \times 4/5 { \repeat unfold 5 { eis'16 } } \times 4/6 { \repeat unfold 6 { eis'16 } } |
+  \times 4/7 { \repeat unfold 7 { eis'16 } } \repeat unfold 8 { eis'32 } \times 4/7 { \repeat unfold 7 { eis'16 } } \times 4/6 { \repeat unfold 6 { eis'16 } } |
+  \times 4/5 { \repeat unfold 4 { eis'16 } r } r4 |
+  fis'2 eis'4... r32 |
+  \times 2/3 { \repeat unfold 3 { \scoop gis'8.. r32 } } \repeat unfold 4 { \scoop fisis'32. r64 } r4 |
+  ais'4-_ ais'4-_ ais'32 r16. ais'8 ais'16-. ais'16-. ais'16-. ais'16-. |
+  \times 2/3 { ais'4-! \scoop ais'8.. r32 \scoop ais'8.. r32 } \times 2/3 { ais'4-_ a'4 ( gis'4 ) } |
+  ais'4 ais'8
+  \times 2/3 { b'4-_ b'-_ b'-_ } \times 2/3 { b'4-_ b'-_ }
+  \times 8/9 { \repeat unfold 8 ais'8-_ } |
+  b'4^\mordent \scoop b'16.. r64 \scoop b'16.. r64 |
+  \times 4/7 { \repeat unfold 7 { \scoop b'8.. r32 } } |
+  \times 8/10 { \repeat unfold 10 b'8-. } |
+  \times 4/5 { ais'4-_ ais'-_ ais'-_ ais'-_ ais'-_ } |
+  d''2^\mordent \times 2/3 { \repeat unfold 3 { \scoop d''8.. r32 }} |
+  \repeat unfold 4 { \scoop fis'8.. r32 } |
+  \times 4/6 { \repeat unfold 6 eis'4-_ } |
+  fis'8^\pp [ fis'16 fis' ] fis' [ fis' ] fis' [ fis' ] r8 |
+  fis'8 [ fis'16 ] fis' [ fis' fis' fis' fis' ] r8 |
+  fis'8 [ fis'16 fis' ] fis' [ fis' ] fis' [ fis' ] r8 |
+  fis'8 [ fis'16 ] fis' [ fis' fis' fis' fis' ] r8 |
+  fis'8^\< [ fis'16 fis' ] fis' [ fis' ] fis' [ fis' ] fis' [ fis'^\p ] r8 |
+  fis'8^\pp^\< [ fis'16 ] fis' [ fis'8^\mf^\> fis' fis' fis' ] |
+  fis'8^\p [ fis'16 fis' ] fis' [ fis' ] << { \repeat unfold 6 { \scoop fis'8 r16 } 
+       } { \repeat unfold 6 { \ugh } } >>
+  fis'8-_^\mp fis'-_ fis'-_ |
+  << { \scoop fis'8.. r32 \scoop fis'8.. r32  \scoop fis'8.. r32 } { \qcrmf 3 } >> |
+  \repeat unfold 4 << { { \scoop fis'8 r16 } } { \ugh } >> |
+  \repeat unfold 2 << { \scoop fis'8.. r32 } { \qcr 1 } >> |
+  \repeat unfold 5 << { \scoop fis'8 r16 } { s8^\p^\< s16\parend^\f } >> |
+  \repeat unfold 2 << { \scoop fis'8.. r32 } { \qcr 1 } >> fis'8-_ |
+  << { \repeat unfold 4 { \scoop a'8.. r32  } |
+  \repeat unfold 4 { \scoop a'8.. r32  } |
+  \repeat unfold 4 { \scoop a'8.. r32  } |
+  \repeat unfold 4 { \scoop a'8.. r32  } | } { \qcr 16 } >>
+  \times 4/6 { \repeat unfold 6 { \scoop fis'8.. r32  } } |
+  \times 4/6 { \repeat unfold 6 { \scoop fis'8.. r32  } } |
+  \repeat unfold 4 { \scoop a'8.. r32  } |  
+  \times 4/6 { \repeat unfold 4 { \scoop fis'8.. r32  } } |
+  d'4-_ d'-_ d'8-_ d'8-_ d'16-. d'-. d'-. d'-. |
+  \times 2/3 { r4 \scoop d'8.. r32 \scoop d'8.. r32 } \times 2/3 { \scoop d'8.. r32 \scoop d'8.. r32 } |
+  d'4-_ d'-_ \times 2/3 { \scoop d'8.. r32 \scoop d'8.. r32 \scoop d'8.. r32 } |
+  \times 2/3 { \scoop d'8.. r32 \scoop d'8.. r32 \scoop d'8.. r32 } \repeat unfold 4 { \scoop d'16.. r64 } |
+  \once \override Score.RehearsalMark.break-visibility = ##(#t #t #f)
+  \mark \markup \fermata
+  cis''4-_^\p cis''-_ c''8-_ c''8-_ c''16-. c''-. c''-. c''-. |
+  \times 2/3 { r4 b'8.. r32 b'8.. r32 } \times 2/3 { c''8.. r32 c''8.. r32 c''8.. r32 } |
+  cis''4 r4 r2 |
+}
+
+voiceThree = {
+  %\clef alto
+  \key d \major
+  \scoop fis'8.. r32  \scoop fis'8.. r32  \scoop fis'8.. r32  \scoop fis'8.. r32 |
+  \times 2/3 { r4 \repeat unfold 2 { \scoop d'8.. r32 } } \scoop d'8.. r32 d'16-. d'16-. d'16-. d'16-. |
+  \repeat unfold 2 { \scoop fis'8.. r32  } |
+  \times 2/3 { \repeat unfold 4 { \scoop d'8.. r32  } } |
+  \repeat unfold 2 { \scoop bes8..-- r32  } \repeat unfold 2 { b8-_  } \repeat unfold 4 b16-. |
+  \times 2/3 { r4 \repeat unfold 2 { \scoop cis'8.. r32 } } \times 2/3 { c'4-_ c'-_ c'-_ }
+  \repeat unfold 2 { \scoop bes8..-- r32  } \repeat unfold 2 { b8-_  }
+  \times 8/12 { \repeat unfold 6 { e'8-. [e'-.] }}
+  \repeat unfold 2 { b'8..-- r32  } \repeat unfold 2 { bes'8-_  } \repeat unfold 4 bes'16-. |
+  \times 2/3 { r4 \repeat unfold 2 { \scoop a'8.. r32 } } \times 2/3 { \repeat unfold 3 a'4-_ } |
+  \repeat unfold 2 { g'8..--^\espressivo r32  } \times 4/5 { bes8-_ [ bes-_ bes-_ bes-! ] }
+  \times 2/3 { \repeat unfold 2 { fis'8. r16  } \repeat unfold 2 { fis'8. r16  } r4 } |
+  \repeat unfold 2 { fis'4-_  } bes8 bes \times 2/3 { bes-. bes-. bes-. } |
+  gis'8.-_ gis'-. g'-_ g'-! |
+  d'4 d'8.. r32 \times 2/3 { bes'4-. bes' bes'-. } |
+  r8 e'-. e'-. ees' ees'-. r |
+  \repeat unfold 12 { e'16-! } \repeat unfold 4 { e'16-. } |
+  \repeat unfold 8 { e'16-. } \repeat unfold 4 { e'16 }  |
+  \repeat unfold 4 { e'16 [ e'16 e'16 ] } |
+  \repeat unfold 3 { e'16 [ e'16 e'16 ] } e'16 [ e'16 e'16 e'16 ] |
+  bes4-_ bes-_ b8-. b-. \times 4/5 { \repeat unfold 5 { b-. } } |
+  cis'8-. cis'-. \times 2/3 { c'4-! c'-! c'-! } r |
+  d'4 ~ d'16.. r64 d'8 d'2 |
+  \repeat unfold 4 { d'16 } \repeat unfold 4 { d'16 } \repeat unfold 4 { d'16 } \times 4/5 { \repeat unfold 5 { d'16 } } |
+  \times 4/6 { \repeat unfold 6 { d'16 } } \times 4/5 { \repeat unfold 5 { d'16 } } \repeat unfold 4 { d'16 } \times 2/3 { \repeat unfold 3 { d'8 } } |
+  \times 2/3 { \repeat unfold 2 { d'8 } r } r4 |
+  d'2 d'4... r32 |
+  \times 2/3 { \repeat unfold 3 { \scoop dis'8.. r32 } } \repeat unfold 4 { \scoop disis'32. r64 } r4 |
+  gis'4-_ gis'4-_ gis'32 r16. gis'8 gis'16-. gis'16-. gis'16-. gis'16-. |
+  \times 2/3 { gis'4-! \scoop gis'8.. r32 \scoop gis'8.. r32 } \times 2/3 { gis'4-_ g'4 ( fis'4 ) } |
+  fis'4 fis'8 |
+  \times 2/3 { \repeat unfold 3 gis'4-_ } \times 2/3 { gis'4-_ gis'-_ } |
+  \times 8/9 { \repeat unfold 8 gisis'8-_ }
+  R2 |
+  dis'2^\mordent \repeat unfold 3 dis'8-_ e'8-_ |
+  \times 4/7 { \repeat unfold 7 e'4-_ } |
+  \times 4/7 { \repeat unfold 7 e'4-_ } |
+  \times 4/5 { e'4-_ \repeat unfold 4 { \scoop b'8.. r32 } } |
+  \times 4/7 { \repeat unfold 7 { \scoop d'8..-_ r32 }} |
+  \times 4/7 { \repeat unfold 7 { \scoop d'8..-_ r32 }} |
+  dis'8^\pp [ dis'16 dis' ] dis' [ dis' ] d' [ d' ] r8 |
+  cis'8 [ cis'16 ] e' [ e' e' e' e' ] r8 |
+  dis'8 [ dis'16 dis' ] dis' [ dis' ] b [ b ] r8 |
+  e'8 [ e'16 ] e' [ e' e' e' e' ] r8 |
+  dis'8^\< [ dis'16 dis' ] dis' [ dis' ] d' [ d' ] d' [ d'^\p ] r8 |
+  cis'8^\pp^\< [ cis'16 ] e' [ e'8^\mf^\> e' e' e' ] |
+  << { \scoop dis'8 r16 \scoop dis'8 r16  \scoop dis'8 r16 d'8 r16 } { \repeat unfold 4 { \ugh } } >> |
+  d'8-_ d'-_ d'-_ << { \scoop cis'8.. r32 \scoop cis'8.. r32 \scoop e'8.. r32 } { \qcr 3 } >> |
+  \repeat unfold 4 << { { \scoop e'8 r16 } } { \ugh } >> |
+  << { \repeat unfold 3 { \scoop dis'8.. r32 } } { \qcrmf 3 } >> |
+  d'8-_ d'-_ d'-_ d'-_ |
+  << { cis'8.. r32 cis'8.. r32 e'8.. r32 e'8 r16 |
+  e'8 r16 e'8 r16 e'8.. r32 } { \qcr 3 \repeat unfold 3 { \ugh } \qcr 1 } >> |
+  << { \times 2/3 { \repeat unfold 3 { \scoop dis'4.. r16 } } } { \repeat unfold 3 { s4..*2/3^\p^\< s16*2/3\parend^\f } } >> |
+  << { \repeat unfold 2 { \scoop d'8.. r32 } \repeat unfold 2 { \scoop fis'8.. r32 } |
+  \repeat unfold 4 { \scoop fis'8.. r32 } |
+  \repeat unfold 4 { \scoop fis'8.. r32  } | } { \qcr 12 } >>
+  \times 4/6 { \repeat unfold 6 { \scoop d'8.. r32  } } |
+  \times 4/6 { \repeat unfold 6 { \scoop d'8.. r32  } } |
+  \repeat unfold 4 { \scoop fis'8.. r32  } |  
+  \times 4/6 { \repeat unfold 4 { \scoop d'8.. r32  } } |
+  bes4-_ bes-_ b8-_ b8-_ b16-. b-. b-. b-. |
+  \times 2/3 { r4 \scoop cis'8.. r32 \scoop cis'8.. r32 } \times 2/3 { \scoop c'8.. r32 \scoop c'8.. r32 } |
+  bes4-_ bes-_ \times 2/3 { \scoop b8.. r32 \scoop b8.. r32 \scoop b8.. r32 } |
+  \times 2/3 { \scoop cis'8.. r32 \scoop cis'8.. r32 \scoop c'8.. r32 } \repeat unfold 4 { \scoop c'16.. r64 } |
+  \once \override Score.RehearsalMark.break-visibility = ##(#t #t #f)
+  \mark \markup \fermata
+  b'4-_^\p b'-_ bes'8-_ bes'8-_ bes'16-. bes'-. bes'-. bes'-. |
+  \times 2/3 { r4 \scoop a'8.. r32 \scoop a'8.. r32 } \times 2/3 { \scoop bes'8.. r32 \scoop bes'8.. r32 \scoop bes'8.. r32 } |
+  b'4 r4 r2 |
+}
+voiceFour = {
+  %\clef tenor
+  \clef "treble_8"
+  \key d \major
+  \scoop d'8.. r32 \scoop d'8.. r32  \scoop d'8.. r32  \scoop d'8.. r32 |
+  \times 2/3 { r4 \repeat unfold 2 { \scoop bes8.. r32 }  } \scoop bes8.. r32 bes16-. bes16-. bes16-. bes16-. |
+  \repeat unfold 2 { \scoop d'8.. r32  } |
+  \times 2/3 { \repeat unfold 4 { \scoop bes8.. r32  } } |
+  \repeat unfold 2 { \scoop g8..-- r32  } \repeat unfold 2 { g8-_  } \repeat unfold 4 g16-. |
+  \times 2/3 { r4 \repeat unfold 2 { \scoop g8.. r32 } } \times 2/3 { g4-_ g-_ g-_ }
+  \repeat unfold 2 { \scoop g8..-- r32  } \repeat unfold 2 { g8-_  }
+  \times 8/12 { \repeat unfold 6 { c'8-. [c'-.] }}
+  \repeat unfold 2 { g'8..-- r32  } \repeat unfold 2 { g'8-_  } \repeat unfold 4 g'16-. |
+  \times 2/3 { r4 \repeat unfold 2 { \scoop fis'8.. r32 } } \times 2/3 { \repeat unfold 3 fis'4-_ } |
+  \repeat unfold 2 { e'8..--^\espressivo r32  } \times 4/5 { g8-_ [ g-_ g-_ g-! ] }
+  \times 2/3 { \repeat unfold 2 { e'8. r16  } \repeat unfold 2 { ees'8. r16  } r4 } |
+  \repeat unfold 2 { e'4-_  } a8 a \times 2/3 { a-. a-. a-. } |
+  e'8.-_ e'-. ees'-_ ees'-! |
+  cis'4 \scoop cis'8.. r32 \times 2/3 { g4-. g g-. } |
+  r8 cis'-. cis'-. c'-. c'-. r |
+  \repeat unfold 12 { d'16-! } \repeat unfold 4 { d'16-. } |
+  \repeat unfold 8 { d'16-. } \repeat unfold 4 { d'16 }  |
+  \repeat unfold 4 { cis'16 [ cis'16 cis'16 ] } |
+  \repeat unfold 3 { cis'16 [ cis'16 cis'16 ] } cis'16 [ cis'16 cis'16 cis'16 ] |
+  g4-_ g-_ g8-. g-. \times 4/5 { \repeat unfold 5 { g-. } } |
+  g8-. g-. \times 2/3 { g4-! g-! g-! } r |
+  b4 ~ b16.. r64 b8 b2 |
+  \repeat unfold 8 { b16-- \repeat unfold 3 { b16 } }
+  b16-- \repeat unfold 2 { b16 } r16 r4 |
+  b2 b4... r32 |
+  \times 2/3 { \repeat unfold 3 { \scoop cis'8.. r32 } } \repeat unfold 4 { \scoop cisis'32. r64 } r4 |
+  fis'4-_ fis'4-_ fis'32 r16. fis'8 fis'16-. fis'16-. fis'16-. fis'16-. |
+  \times 2/3 { fis'4-! \scoop fis'8.. r32 \scoop fis'8.. r32 } \times 2/3 { fis'4-_ f'4 ( e'4 ) } |
+  dis'4 dis'8 |
+  \times 2/3 { ais4-_ ais-_ ais-_ } \times 2/3 { ais-_ ais-_ } |
+  \times 8/9 { \repeat unfold 8 eisis'8-_ } |
+  R2 |
+  \times 2/3 { r1 \scoop ais4.. r16 } |
+  \repeat unfold 2 { \scoop ais4.. r16 } |
+  \times 8/9 { r8 \repeat unfold 6 b-_  dis'-_ dis'-_ } |
+  \repeat unfold 4 { dis'8.. r32 } |
+  \times 2/3 { \repeat unfold 3 { \scoop b4.. r16 } } |
+  \repeat unfold 4 { \scoop b8.. r32 } |
+  \repeat unfold 4 R1*5/8  |
+  R2. |
+  R2. |
+  r4. << { \scoop b8.. r32 \scoop b8 ~ |
+  b16. r32 } { \qcrmf 2 } >>  a4.-- a4.-- << { \scoop a8.. r32 } { \qcr 1 } >> |
+  b8-_ b-_ b-_ b-_ b-_ b-_ |
+  b-_ b-_ b-_ b-_ gis-_ gis-_ |
+  << { \scoop gis8 r16 \scoop gis8 r16 \scoop gis8 |
+  r16 } { \repeat unfold 3 { s8^\p^\< s16\parend^\f } } >>  gis8-_^\mp^\< gis-_ gis-_ gis-_ gis-_ cis'-_^\f^\> cis'-_ |
+  cis'-_ cis'-_ cis'-_ cis'-_ fis-_^\mf |
+  r b-_^\p^\< b-_ b-_ b-_ b-_ b-_ b-_^\f |
+  << { \times 2/3 { \repeat unfold 3 { \scoop b8.. r32 } } \times 2/3 { \repeat unfold 3 { \scoop d'8.. r32 } } | } { \qtripcr 6 } >>
+  << { \repeat unfold 4 { \scoop d'8.. r32  } |
+  \repeat unfold 4 { \scoop d'8.. r32  } | } { \qcr 8 } >>
+  \times 4/6 { \repeat unfold 6 { \scoop bes8.. r32  } } |
+  \times 4/6 { \repeat unfold 6 { \scoop bes8.. r32  } } |
+  \repeat unfold 4 { \scoop d'8.. r32  } |  
+  \times 4/6 { \repeat unfold 4 { \scoop bes8.. r32  } } |
+  g4-_ g-_ g8-_ g8-_ g16-. g-. g-. g-. |
+  \times 2/3 { r4 \scoop g8.. r32 \scoop g8.. r32 } \times 2/3 { \scoop g8.. r32 \scoop g8.. r32 } |
+  g4-_ g-_ \times 2/3 { \scoop g8.. r32 \scoop g8.. r32 \scoop g8.. r32 } |
+  \times 2/3 { \scoop g8.. r32 \scoop g8.. r32 \scoop g8.. r32 } \repeat unfold 4 { \scoop g16.. r64 } |
+  \once \override Score.RehearsalMark.break-visibility = ##(#t #t #f)
+  \mark \markup \fermata
+  gis'4-_^\p gis'-_ g'8-_ g'8-_ g'16-. g'-. g'-. g'-. |
+  \times 2/3 { r4 fis'8.. r32 fis'8.. r32 } \times 2/3 { g'8.. r32 g'8.. r32 g'8.. r32 } |
+  gis'4 r4 r2 |
+}
+
+voiceFive = {
+  \clef bass
+  \key d \major
+  \scoop bes8.. r32  \scoop bes8.. r32  \scoop bes8.. r32  \scoop bes8.. r32  |
+  \times 2/3 { r4 \repeat unfold 2 { \scoop g8.. r32 }  } \scoop g8.. r32 g16-. g16-. g16-. g16-. |
+  \repeat unfold 2 { \scoop bes8.. r32  } |
+  \times 2/3 { \repeat unfold 4 { \scoop g8.. r32  } } |
+  \repeat unfold 2 { \scoop a,8..-- r32  } \repeat unfold 2 { a,8-_  } \repeat unfold 4 a,16-. |
+  \times 2/3 { r4 \repeat unfold 2 { \scoop a,8.. r32 } } \times 2/3 { a,4-_ a,-_ a,-_ }
+  \repeat unfold 2 { \scoop a,8..-- r32  } \repeat unfold 2 { a,8-_  } |
+  \times 8/12 { \repeat unfold 6 { d8-. [d-.] }} |
+  R1 |
+  R1 |
+  \repeat unfold 2 { a,8..--^\espressivo r32  } \times 4/5 { a,8-_ [ a,-_ a,-_ a,-! ] } |
+  \times 2/3 { \repeat unfold 2 { d8. r16  } \repeat unfold 2 { d8. r16  } r4 } |
+  \repeat unfold 2 { g,4-_  } g,8 g, \times 2/3 { g,-. g,-. g,-. } |
+  fis,8.-_ fis,-. f,-_ f,-! |
+  e,4 \scoop e,8.. r32 \times 2/3 { a,4-. a, a,-. } |
+  r8 d-. d-. d-. d-. r |
+  \repeat unfold 12 { g,16-! } \repeat unfold 4 { g,16-. } |
+  \repeat unfold 8 { g,16-. } \repeat unfold 4 { g,16 }  |
+  \repeat unfold 4 { g,16 [ g,16 g,16 ] } |
+  \repeat unfold 3 { g,16 [ g,16 g,16 ] } g,16 [ g,16 g,16 g,16 ] |
+  a,4-_ a,-_ a,8-. a,-. \times 4/5 { \repeat unfold 5 { a,-. } } |
+  a,8-. a,-. \times 2/3 { a,4-! a,-! a,-! } r |
+  cis4 ~ cis16.. r64 cis8 cis2 |
+  fis4 ~ \times 2/3 { fis8-_ fis-_ fis-_ } \times 2/3 { fis-_ fis-_ fis-_ } \times 2/3 { fis-_ fis-_ fis-_ } |
+  fis8-_ fis-_ fis-_ fis-_ \times 2/3 { fis4-_ fis-_ fis-_ } |
+  fis-_ r |
+  cis2 cis4... r32 |
+  R1 |
+  dis'4-_ dis'4-_ dis'32 r16. dis'8 dis'16-. dis'16-. dis'16-. dis'16-. |
+  \times 2/3 { dis'4-! \scoop dis'8.. r32 \scoop dis'8.. r32 } \times 2/3 { dis'4-_ d'4 ( cis'4 ) } |
+  gis4 gis8 |
+  \times 2/3 { fisis4-_ fisis-_ fisis-_ } \times 2/3 { fisis-_ fisis-_ } |
+  \times 8/9 { \repeat unfold 8 { fisis8-_ } } |
+  R2 |
+  \repeat unfold 4 { \scoop gis,8.. r32 } |
+  \times 4/5 { \repeat unfold 5 { \scoop gis,8.. r32 } } |
+  gis,2^\mordent \times 2/3 { \repeat unfold 3 { gis,8.. r32 }} |
+  \times 8/9 { \repeat unfold 9 gis,8-. } |
+  \times 8/9 { gis,8-. \repeat unfold 8 cis8-. } |
+  \times 8/9 { \repeat unfold 9 cis8-. } |
+  R1*5/8 |
+  R1*5/8 |
+  b,8^\pp b,16 [ b, ] b, [ b, ] d [ d ] r8 |
+  cis8 [ cis16  ] ais, [ ais, ais, ais, ais, ] r8 |
+  << { \scoop b,8 r16 \scoop b,8 r16 \scoop b,8 r16 } { \repeat unfold 3 \ugh } >>  gis,16.-. gis,-. |
+  gis,8-. gis,-. cis8-. << { \scoop cis8 r16 \scoop cis8 r16 } { \repeat unfold 2 \ugh } >> |
+  cis8-. cis-. << { \scoop fis,8.. r32 \scoop fis,8.. r32 } { \qcr 2 } >> |
+  << { \scoop b,4 r8 \scoop b,4 r8 \scoop b,4 r8 |
+  \scoop d4 r8 \scoop d4 r8 |
+  \scoop cis4 r8 \scoop cis4 r8 } { \repeat unfold 7 { s4^\p^\< s8\parend^\f } } >> |
+  << \times 2/3 { \scoop ais,8.. r32 \scoop ais,8.. r32 \scoop ais,8.. r32 } { \qtripcr 3 } >> |
+  << { \scoop b,4 r8 \scoop b,4 r8 \scoop b,8. ~ |
+  b,16 r8 } { \repeat unfold 3 { s4^\p^\< s8\parend^\f } } >>  << { \scoop gis,8 r16 \scoop gis,8 r16 \scoop gis,16 ~ |
+  gis, r } { \repeat unfold 3 \ugh } >> << { \scoop cis8.. r32 \scoop cis8.. r32 \scoop cis8.. r32 \scoop cis8 ~ |
+  cis16. r32 \scoop cis8.. r32 \scoop cis8.. r32 \scoop ais,8.. r32 } { \qcr 7 } >> \scoop ais,8^\p^\< ~ |
+  << { \times 2/3 { ais,8 r\parend^\f \scoop bes8.. r32  \scoop bes8.. r32  } \scoop bes8.. r32  \scoop bes8.. r32  } { s4*2/3 \qtripcr 2 \qcr 2 } >> |
+  << { \repeat unfold 4 { \scoop bes8.. r32  } } { \qcr 4 } >> |
+  \times 4/6 { \repeat unfold 6 { \scoop g8.. r32  } } |
+  \times 4/6 { \repeat unfold 6 { \scoop g8.. r32  } } |
+  \repeat unfold 4 { \scoop bes8.. r32  } |  
+  \times 4/6 { \repeat unfold 4 { \scoop g8.. r32  } } |
+  a,4-_ a,-_ a,8-_ a,8-_ a,16-. a,-. a,-. a,-. |
+  \times 2/3 { r4 \scoop a,8.. r32 \scoop a,8.. r32 } \times 2/3 { \scoop a,8.. r32 \scoop a,8.. r32 } |
+  a,4-_ a,-_ \times 2/3 { \scoop a,8.. r32 \scoop a,8.. r32 \scoop a,8.. r32 } |
+  \times 2/3 { \scoop a,8.. r32 \scoop a,8.. r32 \scoop a,8.. r32 } \repeat unfold 4 { \scoop a,16.. r64 } |
+  \once \override Score.RehearsalMark.break-visibility = ##(#t #t #f)
+  \mark \markup \fermata
+  e'4-_^\p e'-_ ees'8-_ ees'8-_ ees'16-. ees'-. ees'-. ees'-. |
+  \times 2/3 { r4 d'8.. r32 d'8.. r32 } \times 2/3 { ees'8.. r32 ees'8.. r32 ees'8.. r32 } |
+  e'4 r4 r2 |
+}
+
 dynOne = {
   \qcrmp 4
   s4*2/3 \qtripcrpp 2 \qcrppff 1 s4^\p
@@ -653,6 +659,26 @@ dynMisEndD = {
   \qcr 4 |
   \repeat unfold 3 { s4..*2/3^\p^\< s16*2/3\parend^\f } |
   \repeat unfold 2 { s8..^\p^\< s32\parend^\mp } \repeat unfold 2 { s8..^\pp^\< s32\parend^\p } |
+}
+
+dynEnd = {
+  \repeat unfold 4 s1*5/8
+  s2. |
+  s2. |
+  s2. |
+  s1*9/8 |
+  s2.*2 |
+  s2 |
+  s1*15/16
+  s1*5/8
+  s1*4 |
+  \qtripcrppmp 8
+  \qtripcr 4 |
+  \qcr 4 |
+  \qtripcrppmp 4
+  s2.^\p s4^\< |
+  s4*2/3 \qtripcr 4 |
+  s2^\p \qtripcr 6 \halfcr 4 |
 }
 
 dynMisEndE = {
@@ -787,6 +813,11 @@ miseryEndE = \lyricmode {
   \repeat unfold 9 se
 }
 
+credoA = \lyricmode {
+om -- ni -- po -- ten -- tem
+om -- ni -- po -- ten -- tem
+A
+}
 credoB = \lyricmode {
 Cre -- do in u -- num De -- um,
 Pat -- rem om -- ni -- po -- ten -- tem
@@ -814,18 +845,35 @@ Cre -- do in u -- num De -- um,
 Pat -- rem om -- ni -- po -- ten -- tem
 Cre -- do in u -- num De -- um,
 }
+credoD = \lyricmode {
+Cre -- do
+Cre -- do in u -- num De -- um,
+Cre -- do in u -- num De -- um,
+om -- ni -- po -- ten -- tem
+u -- num De -- um,
+Cre -- do in u -- num De -- um,
+Cre -- do in u -- num De -- um,
+Pat -- rem om -- ni -- po -- ten -- tem
+A A A
+}
 credoE = \lyricmode {
 Cre -- do in u -- num De -- um,
 Pat -- rem om -- ni -- po -- ten -- tem
 Cre -- do in u -- num De -- um,
 Pat -- rem om -- ni -- po -- ten -- tem
 Cre -- do in u -- num De -- um,
-Pa pa pa
-Cre -- do in u -- num De -- um,
+Pa pat -- rem
+om -- ni -- po -- ten -- tem
+in u -- num De -- um,
+u -- num De -- um,
+A A A A
 }
 
-agnusLastB = \lyricmode {
-  \repeat unfold 8 A
+agnusLastStart = \lyricmode {
+  \repeat unfold 4 A
+}
+agnusLastMid = \lyricmode {
+  \repeat unfold 4 A
   \repeat unfold 12 gnu
   \repeat unfold 4 A
   \repeat unfold 4 gnu
@@ -833,11 +881,21 @@ agnusLastB = \lyricmode {
   Dei ei ei ei
   A A gnu gnu gnu
   gnu gnu gnu s~De De De De
+}
+agnusLastEnd = \lyricmode {
   A A gnu gnu n n n n
   De De De De i
   An
 }
-
+agnusLast = {
+  \agnusLastStart
+  \agnusLastMid
+  \agnusLastEnd
+}
+agnusLastPartial = {
+  \agnusLastMid
+  \agnusLastEnd
+}
 piecemarks = {
   \tempo "fort" 4=96
   \time 4/4
@@ -962,16 +1020,16 @@ piecemarks = {
 }
 \score {
 \new ChoirStaff <<
-  \new Staff \new Voice = "voiceOne" << \voiceOne { \dynOne \dynTwo \dynThree \dynMOne \dynMis \dynMisEndA } \piecemarks >>
-  \new Lyrics \lyricsto "voiceOne" { \agnusOne \agnusTwo \agnusThree \miserereOne \miseryAll \miseryEndA }
-  \new Staff \new Voice = "voiceTwo" << \voiceTwo { \dynOne \dynTwo \dynThree \dynMTwo \dynMis \dynMisEndB } \piecemarks >>
-  \new Lyrics \lyricsto "voiceTwo" { \agnusOne \agnusTwo \agnusThree \miserereTwo \miseryAll \miseryEndB \credoB }
-  \new Staff \new Voice = "voiceThree" << \voiceThree { \dynOne \dynTwo \dynThree \dynMThree \dynMis \dynMisEndC } \piecemarks >>
-  \new Lyrics \lyricsto "voiceThree" { \agnusOne \agnusTwo \agnusThree \miserereThree \miseryAll \miseryEndC \credoC }
-  \new Staff \new Voice = "voiceFour" << \voiceFour { \dynOne \dynTwo \dynThree \dynMFour \dynMis \dynMisEndD } \piecemarks >>
-  \new Lyrics \lyricsto "voiceFour" { \agnusOne \agnusTwo \agnusThree \miserereFour \miseryAll \miseryEndD }
-  \new Staff \new Voice = "voiceFive" << \voiceFive { \dynOne s\breve \dynThree \dynMFive \dynMis \dynMisEndE } \piecemarks >>
-  \new Lyrics \lyricsto "voiceFive" { \agnusOne  \agnusThree \miserereFive \miseryAll \miseryEndE \credoE }
+  \new Staff \new Voice = "voiceOne" << \voiceOne { \dynOne \dynTwo \dynThree \dynMOne \dynMis \dynMisEndA \dynEnd } \piecemarks >>
+  \new Lyrics \lyricsto "voiceOne" { \agnusOne \agnusTwo \agnusThree \miserereOne \miseryAll \miseryEndA \credoA \agnusLastMid An }
+  \new Staff \new Voice = "voiceTwo" << \voiceTwo { \dynOne \dynTwo \dynThree \dynMTwo \dynMis \dynMisEndB \dynEnd } \piecemarks >>
+  \new Lyrics \lyricsto "voiceTwo" { \agnusOne \agnusTwo \agnusThree \miserereTwo \miseryAll \miseryEndB \credoB \agnusLast }
+  \new Staff \new Voice = "voiceThree" << \voiceThree { \dynOne \dynTwo \dynThree \dynMThree \dynMis \dynMisEndC \dynEnd } \piecemarks >>
+  \new Lyrics \lyricsto "voiceThree" { \agnusOne \agnusTwo \agnusThree \miserereThree \miseryAll \miseryEndC \credoC \agnusLast }
+  \new Staff \new Voice = "voiceFour" << \voiceFour { \dynOne \dynTwo \dynThree \dynMFour \dynMis \dynMisEndD \dynEnd } \piecemarks >>
+  \new Lyrics \lyricsto "voiceFour" { \agnusOne \agnusTwo \agnusThree \miserereFour \miseryAll \miseryEndD \credoD \agnusLastPartial }
+  \new Staff \new Voice = "voiceFive" << \voiceFive { \dynOne s\breve \dynThree \dynMFive \dynMis \dynMisEndE \dynEnd } \piecemarks >>
+  \new Lyrics \lyricsto "voiceFive" { \agnusOne  \agnusThree \miserereFive \miseryAll \miseryEndE \credoE \agnusLastPartial }
 >>
 \layout{
   \context {
