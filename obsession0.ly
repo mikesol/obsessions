@@ -81,25 +81,17 @@ voiceOne = {
   r8 ais''4. ais''4.. r16 |
   a'1 |
   gis' |
-  R1*11/16 |
-  R1*10/16 |
-  R1*11/16 |
-  R1*9/16 |
-  R1*7/6 |
-  R1*13/16 |
-  R1*11/16
-  R1*7/8 |
-  R2 |
-  R1*5/16 |
-  R1*9/16 |
-  R1*10/16 |
-  R1*9/16 |
-  R1*6/16 |
-  R1*13/16 |
-  R1*9/16 |
-  R1*10/16 |
-  R1*7/16 |
-  << { gis''2.. r8 } { s2^\p^\< s4.^\> s8\parend^\p } >> |
+  \repeat unfold 4 R1*5/8 |
+  R2.*3 |
+  r8. gis' ~ gis'4. ~ gis' ~ |
+  gis'8 cis''2 ais'8 ~ |
+  ais'2 ~ ais'8 e''8 ~ |
+  e''2 ~ |
+  e''4. dis''4. gis'8. |
+  b'2 ~ b'8 ~ |
+  b' fis''8 ~ fis''4 ~ fis''2 ~ |
+  fis''4 gis''4 ~ gis''2 ~ |
+  \times 2/3 { gis''2 cis'' cis'' } |
 }
 voiceTwo = {
   %\clef soprano
@@ -144,12 +136,22 @@ voiceTwo = {
   d''2^\mordent \times 2/3 { \repeat unfold 3 { \scoop d''8.. r32 }} |
   \repeat unfold 4 { \scoop fis'8.. r32 } |
   \times 4/6 { \repeat unfold 6 eis'4-_ } |
-  fis'8 fis'16 [ fis' ] fis' [ fis' ] fis' [ fis' ] r8 |
-  fis'8 fis'16 [ fis' ] fis' [ fis' ] fis' [ fis' ] r8 |
-  fis'8 fis'16 [ fis' ] fis' [ fis' ] fis' [ fis' ] r8 |
-  fis'8 fis'16 [ fis' ] fis' [ fis' ] fis' [ fis' ] r8 |
-  fis'8 fis'16 [ fis' ] fis' [ fis' ] fis' [ fis' ] r8 |
-  fis'8 fis'16 [ fis' ] fis' [ fis' ] fis' [ fis' ] r8 |
+  fis'8 [ fis'16 fis' ] fis' [ fis' ] fis' [ fis' ] r8 |
+  fis'8 [ fis'16 ] fis' [ fis' fis' fis' fis' ] r8 |
+  fis'8 [ fis'16 fis' ] fis' [ fis' ] fis' [ fis' ] r8 |
+  fis'8 [ fis'16 ] fis' [ fis' fis' fis' fis' ] r8 |
+  fis'8 [ fis'16 fis' ] fis' [ fis' ] fis' [ fis' ] fis' [ fis' ] r8 |
+  fis'8 [ fis'16 ] fis' [ fis'8 fis' fis' fis' ] |
+  fis'8 [ fis'16 fis' ] fis' [ fis' ] fis'8. fis'8. |
+  fis'8. fis'8. fis'8. fis'8. fis'8 fis' fis' |
+  fis'4 fis' fis' |
+  fis'8. fis' fis' fis' |
+  fis'4 fis' |
+  fis'8. fis' fis' fis' fis' |
+  fis'4 fis' fis'8 |
+  \repeat unfold 4 { \scoop a'8.. r32  } |
+  \repeat unfold 4 { \scoop a'8.. r32  } |
+  \repeat unfold 4 { \scoop a'8.. r32  } |
 }
 
 voiceThree = {
@@ -195,13 +197,22 @@ voiceThree = {
   \times 4/5 { e'4-_ \repeat unfold 4 { \scoop b'8.. r32 } } |
   \times 4/7 { \repeat unfold 7 { \scoop d'8..-_ r32 }} |
   \times 4/7 { \repeat unfold 7 { \scoop d'8..-_ r32 }} |
-  dis'8 dis'16 [ dis' ] dis' [ dis' ] dis' [ dis' ] r8 |
-  dis'8 dis'16 [ dis' ] dis' [ dis' ] dis' [ dis' ] r8 |
-  dis'8 dis'16 [ dis' ] dis' [ dis' ] dis' [ dis' ] r8 |
-  dis'8 dis'16 [ dis' ] dis' [ dis' ] dis' [ dis' ] r8 |
-  dis'8 dis'16 [ dis' ] dis' [ dis' ] dis' [ dis' ] r8 |
-  dis'8 dis'16 [ dis' ] dis' [ dis' ] dis' [ dis' ] r8 |
-
+  dis'8 [ dis'16 dis' ] dis' [ dis' ] d' [ d' ] r8 |
+  cis'8 [ cis'16 ] e' [ e' e' e' e' ] r8 |
+  dis'8 [ dis'16 dis' ] dis' [ dis' ] b [ b ] r8 |
+  e'8 [ e'16 ] e' [ e' e' e' e' ] r8 |
+  dis'8 [ dis'16 dis' ] dis' [ dis' ] d' [ d' ] d' [ d' ] r8 |
+  cis'8 [ cis'16 ] e' [ e'8 e' e' e' ] |
+  dis'8. dis' dis' d' |
+  d'8 d' d' cis'4 cis' e' |
+  e'8. e' e' e' |
+  dis'4 dis' dis' |
+  d'8 d' d' d' |
+  cis'4 cis' e' e'8. |
+  e'8. e'8. e'4 |
+  \times 2/3 { \repeat unfold 3 { \scoop dis'4.. r16 } } |
+  \repeat unfold 2 { \scoop d'8.. r32 } \repeat unfold 2 { \scoop fis'8.. r32 } |
+  \repeat unfold 4 { \scoop fis'8.. r32 } |
 }
 voiceFour = {
   %\clef tenor
@@ -246,6 +257,19 @@ voiceFour = {
   \repeat unfold 4 { dis'8.. r32 } |
   \times 2/3 { \repeat unfold 3 { \scoop b4.. r16 } } |
   \repeat unfold 4 { \scoop b8.. r32 } |
+  \repeat unfold 4 R1*5/8  |
+  R2. |
+  R2. |
+  r4. b4 b8 ~ |
+  b8 a4. a4. a4 |
+  b8 b b b b b |
+  b b b b gis gis |
+  gis8. gis8. gis8 ~ |
+  gis16 gis8 gis gis gis gis cis' cis' |
+  cis' cis' cis' cis' fis |
+  fis b b b b b b b |
+  \times 2/3 { b4 b b } \times 2/3 { d' d' d' } |
+  d'4 d' d' d' |
 }
 
 voiceFive = {
@@ -291,6 +315,22 @@ voiceFive = {
   \times 8/9 { \repeat unfold 9 gis,8-. } |
   \times 8/9 { gis,8-. \repeat unfold 8 cis8-. } |
   \times 8/9 { \repeat unfold 9 cis8-. } |
+  R1*5/8 |
+  R1*5/8 |
+  b,8 b,16 [ b, ] b, [ b, ] d [ d ] r8 |
+  cis8 [ cis16  ] ais, [ ais, ais, ais, ais, ] r8 |
+  b,8. b, b, gis,16. gis, |
+  gis,8 gis, cis8 cis8. cis |
+  cis8 cis fis,4 fis, |
+  b,4. b, b, |
+  d4. d |
+  cis cis |
+  \times 2/3 { ais,4 ais, ais, } |
+  b,4. b, b,8. ~ |
+  b,8. gis, gis, gis,16 ~ |
+  gis,8 cis4 cis cis cis8 ~ |
+  cis cis4 cis ais, ais,8 ~ |
+  \times 2/3 { ais,4 \scoop bes8.. r32  \scoop bes8.. r32  } \scoop bes8.. r32  \scoop bes8.. r32  |
 }
 qcr =
 #(define-music-function
@@ -556,10 +596,6 @@ dynMisEndE = {
   s2 s4.. s16^\p |
 }
 
-dynCredoB = {
-  s1*11/16^\p |
-}
-
 agnusOne = \lyricmode {
   A A A A
   gnu gnu gnu n n n n
@@ -682,22 +718,41 @@ miseryEndE = \lyricmode {
   \repeat unfold 9 se
 }
 
-credo = \lyricmode {
-Cre -- do in u -- num De -- um, Pat -- rem om -- ni -- po -- ten -- tem, fac -- to -- rem cæ -- li et ter -- ræ, vi -- si -- bi -- li -- um om -- ni -- um, et in -- vi -- si -- bi -- li -- um.
+credoB = \lyricmode {
+Cre -- do in u -- num De -- um,
+Pat -- rem om -- ni -- po -- ten -- tem
+Cre -- do in u -- num De -- um,
+Pat -- rem om -- ni -- po -- ten -- tem
+Cre -- do in u -- num De -- um, De -- um,
+Pat -- rem om -- ni -- po -- ten -- tem
+Cre -- do in u -- num De -- um,
+Pat -- rem om -- ni -- po -- ten -- tem
+Cre -- do in u -- num De -- um,
+Pat -- rem om -- ni -- po -- ten -- tem
+Cre -- do in u -- num De -- um,
+u -- num De -- um,
 }
-credoTwo = \lyricmode {
-Et in u -- num Do -- mi -- num Ie -- sum Chris -- tum, Fi -- li -- um De -- i u -- ni -- ge -- ni -- tum. Et ex Pa -- tre na -- tum an -- te om -- ni -- a sæ -- cu -- la.
+credoC = \lyricmode {
+Cre -- do in u -- num De -- um,
+Pat -- rem om -- ni -- po -- ten -- tem
+Cre -- do in u -- num De -- um,
+Pat -- rem om -- ni -- po -- ten -- tem
+Cre -- do in u -- num De -- um, De -- um,
+Pat -- rem om -- ni -- po -- ten -- tem
+Cre -- do in u -- num De -- um,
+Pat -- rem om -- ni -- po -- ten -- tem
+Cre -- do in u -- num De -- um,
+Pat -- rem om -- ni -- po -- ten -- tem
+Cre -- do in u -- num De -- um,
 }
-credoThree = \lyricmode { De -- um de De -- o, }
-credoFour = \lyricmode { lu -- men de lu -- mi -- ne, De -- um }
-credoFourBis = \lyricmode { ve -- rum de De -- o ve -- ro. }
-credoFourTer = \lyricmode { Ge -- ni -- tum, non fac -- tum, }
-credoFive = \lyricmode { con -- sub -- stan -- ti -- a -- lem }
-credoSix = \lyricmode { Pat -- "ri :" }
-credoSeven = \lyricmode { per quem om -- ni -- a fac -- ta sunt. }
-credoEight = \lyricmode { Qui prop -- ter nos ho -- mi -- nes, et prop -- ter nos -- tram sa -- lu -- tem des -- cen -- dit de cæ -- lis. Et in -- car -- na -- tus est de Spi -- ri -- tu Sanc -- to ex Ma -- ri -- a Vir -- gi -- "ne :" et ho -- mo fac -- tus est. Cru -- ci -- fi -- xus e -- tiam pro no -- "bis :" sub Pon -- tio Pi -- la -- to pas -- sus, et se -- pul -- tus est. Et re -- sur -- re -- xit ter -- ti -- a di -- e, se -- cun -- dum Scrip -- tu -- ras. Et as -- cen -- dit in cæ -- "lum :" se -- det ad dex -- te -- ram Pa -- tris. Et i -- te -- rum ven -- tu -- rus est cum glo -- ri -- a iu -- di -- ca -- re vi -- vos, et mor -- tu -- "os :" cui -- us reg -- ni non e -- rit fi -- nis.
-Et in Spi -- ri -- tum San -- ctum, Do -- mi -- num, et vi -- vi -- fi -- can -- "tem :" qui ex Pa -- tre, Fi -- li -- o -- que pro -- ce -- dit. Qui cum Pa -- tre, et Fi -- li -- o si -- mul a -- do -- ra -- tur, et con -- glo -- ri -- fi -- ca -- "tur :" qui lo -- cu -- tus est per Pro -- phe -- tas.
-Et u -- nam, sanc -- tam, ca -- tho -- li -- cam et a -- pos -- to -- li -- cam Ec -- cle -- siam. Con -- fi -- te -- or u -- num bap -- tis -- ma in re -- mis -- si -- o -- nem pec -- ca -- to -- rum. Et ex -- pec -- to res -- ur -- rec -- tio -- nem mor -- tu -- o -- rum. Et vi -- tam ven -- tu -- ri sæ -- cu -- li. A -- men.
+credoE = \lyricmode {
+Cre -- do in u -- num De -- um,
+Pat -- rem om -- ni -- po -- ten -- tem
+Cre -- do in u -- num De -- um,
+Pat -- rem om -- ni -- po -- ten -- tem
+Cre -- do in u -- num De -- um,
+Pa pa pa
+Cre -- do in u -- num De -- um,
 }
 
 agnusLastB = \lyricmode {
@@ -792,7 +847,24 @@ piecemarks = {
   s1 \bar "||" |
   \time 5/8
   \tempo "doux et léger" 16=324
+  \repeat unfold 4 s1*5/8
+  \time 6/8
+  s2. |
+  s2. |
+  s2. |
+  \time 9/8
+  s1*9/8 |
+  \time 3/4
+  s2.*2 |
+  \time 2/4
+  s2 |
+  \time 15/16
+  s1*15/16
+  \time 5/8
   s1*5/8
+  \time 4/4
+  \tempo "fort" 4=96
+  s1
 }
 \paper {
   ragged-right = ##f
@@ -815,14 +887,14 @@ piecemarks = {
 \new ChoirStaff <<
   \new Staff \new Voice = "voiceOne" << \voiceOne { \dynOne \dynTwo \dynThree \dynMOne \dynMis \dynMisEndA } \piecemarks >>
   \new Lyrics \lyricsto "voiceOne" { \agnusOne \agnusTwo \agnusThree \miserereOne \miseryAll \miseryEndA }
-  \new Staff \new Voice = "voiceTwo" << \voiceTwo { \dynOne \dynTwo \dynThree \dynMTwo \dynMis \dynMisEndB \dynCredoB } \piecemarks >>
-  \new Lyrics \lyricsto "voiceTwo" { \agnusOne \agnusTwo \agnusThree \miserereTwo \miseryAll \miseryEndB \credo \credoTwo \credoThree \credoFour \credoFourBis \credoFourTer \credoFive \credoSix \credoSeven \credoEight \agnusLastB }
+  \new Staff \new Voice = "voiceTwo" << \voiceTwo { \dynOne \dynTwo \dynThree \dynMTwo \dynMis \dynMisEndB } \piecemarks >>
+  \new Lyrics \lyricsto "voiceTwo" { \agnusOne \agnusTwo \agnusThree \miserereTwo \miseryAll \miseryEndB \credoB }
   \new Staff \new Voice = "voiceThree" << \voiceThree { \dynOne \dynTwo \dynThree \dynMThree \dynMis \dynMisEndC } \piecemarks >>
-  \new Lyrics \lyricsto "voiceThree" { \agnusOne \agnusTwo \agnusThree \miserereThree \miseryAll \miseryEndC \credo \credoTwo \credoFour \credoFourTer \credoSix \credoEight }
+  \new Lyrics \lyricsto "voiceThree" { \agnusOne \agnusTwo \agnusThree \miserereThree \miseryAll \miseryEndC \credoC }
   \new Staff \new Voice = "voiceFour" << \voiceFour { \dynOne \dynTwo \dynThree \dynMFour \dynMis \dynMisEndD } \piecemarks >>
-  \new Lyrics \lyricsto "voiceFour" { \agnusOne \agnusTwo \agnusThree \miserereFour \miseryAll \miseryEndD \credoTwo }
+  \new Lyrics \lyricsto "voiceFour" { \agnusOne \agnusTwo \agnusThree \miserereFour \miseryAll \miseryEndD }
   \new Staff \new Voice = "voiceFive" << \voiceFive { \dynOne s\breve \dynThree \dynMFive \dynMis \dynMisEndE } \piecemarks >>
-  \new Lyrics \lyricsto "voiceFive" { \agnusOne  \agnusThree \miserereFive \miseryAll \miseryEndE }
+  \new Lyrics \lyricsto "voiceFive" { \agnusOne  \agnusThree \miserereFive \miseryAll \miseryEndE \credoE }
 >>
 \layout{
   \context {
