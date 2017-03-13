@@ -152,6 +152,20 @@ voiceTwo = {
   \repeat unfold 4 { \scoop a'8.. r32  } |
   \repeat unfold 4 { \scoop a'8.. r32  } |
   \repeat unfold 4 { \scoop a'8.. r32  } |
+  \repeat unfold 4 { \scoop a'8.. r32  } |
+  \times 4/6 { \repeat unfold 6 { \scoop fis'8.. r32  } } |
+  \times 4/6 { \repeat unfold 6 { \scoop f'8.. r32  } } |
+  \repeat unfold 4 { \scoop a'8.. r32  } |  
+  \times 4/6 { \repeat unfold 4 { \scoop f'8.. r32  } } |
+  d'4-_ d'-_ d'8-_ d'8-_ d'16-. d'-. d'-. d'-. |
+  \times 2/3 { r4 d'8.. r32 d'8.. r32 } \times 2/3 { d'8.. r32 d'8.. r32 } |
+  d'4-_ d'-_ \times 2/3 { d'8.. r32 d'8.. r32 d'8.. r32 } |
+  \times 2/3 { d'8.. r32 d'8.. r32 d'8.. r32 } \repeat unfold 4 { d'16.. r64 } |
+  \once \override Score.RehearsalMark.break-visibility = ##(#t #t #f)
+  \mark \markup \fermata
+  cis''4-_ cis''-_ c''8-_ c''8-_ c''16-. c''-. c''-. c''-. |
+  \times 2/3 { r4 b'8.. r32 b'8.. r32 } \times 2/3 { c''8.. r32 c''8.. r32 c''8.. r32 } |
+  cis''4 r4 r2 |
 }
 
 voiceThree = {
@@ -864,7 +878,15 @@ piecemarks = {
   s1*5/8
   \time 4/4
   \tempo "fort" 4=96
-  s1
+  s1*7 |
+  \time 4/6
+  s1*4/6 |
+  \time 4/4
+  s1 |
+  \time 5/6
+  s1*5/6 |
+  \time 4/4
+  s1*5 | \bar "|."
 }
 \paper {
   ragged-right = ##f
