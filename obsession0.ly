@@ -92,6 +92,20 @@ voiceOne = {
   b' fis''8 ~ fis''4 ~ fis''2 ~ |
   fis''4 gis''4 ~ gis''2 ~ |
   \times 2/3 { gis''2 cis'' cis'' } |
+  \repeat unfold 4 { \scoop cis''8.. r32  } |
+  \times 4/6 { \repeat unfold 6 { \scoop a'8.. r32  } } |
+  \times 4/6 { \repeat unfold 6 { \scoop a'8.. r32  } } |
+  \repeat unfold 4 { \scoop cis''8.. r32  } |  
+  \times 4/6 { \repeat unfold 4 { \scoop a'8.. r32  } } |
+  fis'4-_ fis'-_ fis'8-_ fis'8-_ fis'16-. fis'-. fis'-. fis'-. |
+  \times 2/3 { r4 fis'8.. r32 fis'8.. r32 } \times 2/3 { fis'8.. r32 fis'8.. r32 } |
+  fis'4-_ fis'-_ \times 2/3 { fis'8.. r32 fis'8.. r32 fis'8.. r32 } |
+  \times 2/3 { fis'8.. r32 fis'8.. r32 fis'8.. r32 } \repeat unfold 4 { fis'16.. r64 } |
+  \once \override Score.RehearsalMark.break-visibility = ##(#t #t #f)
+  \mark \markup \fermata
+  fis''1 ~ |
+  fis'' ~ |
+  fis''4 r4 r2 |
 }
 voiceTwo = {
   %\clef soprano
@@ -154,9 +168,9 @@ voiceTwo = {
   \repeat unfold 4 { \scoop a'8.. r32  } |
   \repeat unfold 4 { \scoop a'8.. r32  } |
   \times 4/6 { \repeat unfold 6 { \scoop fis'8.. r32  } } |
-  \times 4/6 { \repeat unfold 6 { \scoop f'8.. r32  } } |
+  \times 4/6 { \repeat unfold 6 { \scoop fis'8.. r32  } } |
   \repeat unfold 4 { \scoop a'8.. r32  } |  
-  \times 4/6 { \repeat unfold 4 { \scoop f'8.. r32  } } |
+  \times 4/6 { \repeat unfold 4 { \scoop fis'8.. r32  } } |
   d'4-_ d'-_ d'8-_ d'8-_ d'16-. d'-. d'-. d'-. |
   \times 2/3 { r4 d'8.. r32 d'8.. r32 } \times 2/3 { d'8.. r32 d'8.. r32 } |
   d'4-_ d'-_ \times 2/3 { d'8.. r32 d'8.. r32 d'8.. r32 } |
@@ -227,6 +241,20 @@ voiceThree = {
   \times 2/3 { \repeat unfold 3 { \scoop dis'4.. r16 } } |
   \repeat unfold 2 { \scoop d'8.. r32 } \repeat unfold 2 { \scoop fis'8.. r32 } |
   \repeat unfold 4 { \scoop fis'8.. r32 } |
+  \repeat unfold 4 { \scoop fis'8.. r32  } |
+  \times 4/6 { \repeat unfold 6 { \scoop d'8.. r32  } } |
+  \times 4/6 { \repeat unfold 6 { \scoop d'8.. r32  } } |
+  \repeat unfold 4 { \scoop fis'8.. r32  } |  
+  \times 4/6 { \repeat unfold 4 { \scoop d'8.. r32  } } |
+  bes4-_ bes-_ b8-_ b8-_ b16-. b-. b-. b-. |
+  \times 2/3 { r4 cis'8.. r32 cis'8.. r32 } \times 2/3 { c'8.. r32 c'8.. r32 } |
+  bes4-_ bes-_ \times 2/3 { b8.. r32 b8.. r32 b8.. r32 } |
+  \times 2/3 { cis'8.. r32 cis'8.. r32 c'8.. r32 } \repeat unfold 4 { c'16.. r64 } |
+  \once \override Score.RehearsalMark.break-visibility = ##(#t #t #f)
+  \mark \markup \fermata
+  b'4-_ b'-_ bes'8-_ bes'8-_ bes'16-. bes'-. bes'-. bes'-. |
+  \times 2/3 { r4 a'8.. r32 a'8.. r32 } \times 2/3 { bes'8.. r32 bes'8.. r32 bes'8.. r32 } |
+  b'4 r4 r2 |
 }
 voiceFour = {
   %\clef tenor
@@ -284,7 +312,20 @@ voiceFour = {
   fis b b b b b b b |
   \times 2/3 { b4 b b } \times 2/3 { d' d' d' } |
   d'4 d' d' d' |
-}
+  \repeat unfold 4 { \scoop d'8.. r32  } |
+  \times 4/6 { \repeat unfold 6 { \scoop bes8.. r32  } } |
+  \times 4/6 { \repeat unfold 6 { \scoop bes8.. r32  } } |
+  \repeat unfold 4 { \scoop d'8.. r32  } |  
+  \times 4/6 { \repeat unfold 4 { \scoop bes8.. r32  } } |
+  g4-_ g-_ g8-_ g8-_ g16-. g-. g-. g-. |
+  \times 2/3 { r4 g8.. r32 g8.. r32 } \times 2/3 { g8.. r32 g8.. r32 } |
+  g4-_ g-_ \times 2/3 { g8.. r32 g8.. r32 g8.. r32 } |
+  \times 2/3 { g8.. r32 g8.. r32 g8.. r32 } \repeat unfold 4 { g16.. r64 } |
+  \once \override Score.RehearsalMark.break-visibility = ##(#t #t #f)
+  \mark \markup \fermata
+  gis'4-_ gis'-_ g'8-_ g'8-_ g'16-. g'-. g'-. g'-. |
+  \times 2/3 { r4 fis'8.. r32 fis'8.. r32 } \times 2/3 { g'8.. r32 g'8.. r32 g'8.. r32 } |
+  gis'4 r4 r2 |}
 
 voiceFive = {
   \clef bass
@@ -345,6 +386,20 @@ voiceFive = {
   gis,8 cis4 cis cis cis8 ~ |
   cis cis4 cis ais, ais,8 ~ |
   \times 2/3 { ais,4 \scoop bes8.. r32  \scoop bes8.. r32  } \scoop bes8.. r32  \scoop bes8.. r32  |
+  \repeat unfold 4 { \scoop bes8.. r32  } |
+  \times 4/6 { \repeat unfold 6 { \scoop g8.. r32  } } |
+  \times 4/6 { \repeat unfold 6 { \scoop g8.. r32  } } |
+  \repeat unfold 4 { \scoop bes8.. r32  } |  
+  \times 4/6 { \repeat unfold 4 { \scoop g8.. r32  } } |
+  a,4-_ a,-_ a,8-_ a,8-_ a,16-. a,-. a,-. a,-. |
+  \times 2/3 { r4 a,8.. r32 a,8.. r32 } \times 2/3 { a,8.. r32 a,8.. r32 } |
+  a,4-_ a,-_ \times 2/3 { a,8.. r32 a,8.. r32 a,8.. r32 } |
+  \times 2/3 { a,8.. r32 a,8.. r32 a,8.. r32 } \repeat unfold 4 { a,16.. r64 } |
+  \once \override Score.RehearsalMark.break-visibility = ##(#t #t #f)
+  \mark \markup \fermata
+  e'4-_ e'-_ ees'8-_ ees'8-_ ees'16-. ees'-. ees'-. ees'-. |
+  \times 2/3 { r4 d'8.. r32 d'8.. r32 } \times 2/3 { ees'8.. r32 ees'8.. r32 ees'8.. r32 } |
+  e'4 r4 r2 |
 }
 qcr =
 #(define-music-function
