@@ -1,5 +1,6 @@
 \version "2.18"
-#(set-global-staff-size 15.15)
+#(set-global-staff-size 12.60[A)
+\pointAndClickOff
 #(define (scoop-stencil grob)
   (ly:stencil-add
     (ly:note-head::print grob)
@@ -318,6 +319,7 @@ voiceTwo = {
 
 voiceThree = {
   %\clef alto
+  \clef "treble_8"
   \key d \major
   \scoop fis'8.. r32  \scoop fis'8.. r32  \scoop fis'8.. r32  \scoop fis'8.. r32 |
   \times 2/3 { r4 \repeat unfold 2 { \scoop d'8.. r32 } } \scoop d'8.. r32 d'16-. d'16-. d'16-. d'16-. |
@@ -391,7 +393,6 @@ voiceThree = {
   b'4 r4 r2 |
 }
 voiceFour = {
-  %\clef tenor
   \clef "treble_8"
   \key d \major
   \scoop d'8.. r32 \scoop d'8.. r32  \scoop d'8.. r32  \scoop d'8.. r32 |
