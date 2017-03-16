@@ -10,6 +10,7 @@ non
 16thtup
 qtrip
 32nd
+4th
 '''
 
 def _sublistize(pat, N) :
@@ -38,6 +39,8 @@ def _timeize(pat, t) :
     return _genTup(pat, t, 4, '', '16', False)
   if (t == '32nd') :
     return _genTup(pat, t, 8, '', '32', False)
+  if (t == '4th') :
+    return _genTup(pat, t, 1, '', '4', False)
   raise ValueError('unknown time')
 
 def make(key,pat,t,nr = 0, offset = 0) :
@@ -51,4 +54,4 @@ def make(key,pat,t,nr = 0, offset = 0) :
   {2}'''.format(key, _timeize(notes,t), ' '.join(['Sa' if x == 1 else 'Sa __ '+(' '.join(['_' for y in range(x-1)])) for x in pat]))
 
 if __name__ == '__main__' :
-  print make("cis",[10,3,12,2,6,11,3,5,6,2,11,1,6,8,4,10],'16thtup',7)
+  print make("gis,,",[12,12,12], 'qtrip', 0)

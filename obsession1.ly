@@ -67,7 +67,29 @@ voiceTwo = {\relative c'' {
 }
   \key dis \major
   eis'32^\prall-!
-  \repeat unfold 127 gis'32 |
+  \repeat unfold 7 gis'32
+  gis'32
+  \hideNotes
+  \stopStaff
+  \override Staff.StaffSymbol.line-count = #1
+  \startStaff
+  gis'32 [ \repeat unfold 22 gis'32 ]
+  \unHideNotes
+  \stopStaff
+  \override Staff.StaffSymbol.line-count = #5
+  \startStaff
+  \repeat unfold 5 {
+    gis'32
+    \hideNotes
+    \stopStaff
+    \override Staff.StaffSymbol.line-count = #1
+    \startStaff
+    gis'32 [ \repeat unfold 30 gis'32 ]
+    \unHideNotes
+    \stopStaff
+    \override Staff.StaffSymbol.line-count = #5
+    \startStaff
+  }
 }
 voiceThree = {\relative c'' {
 \clef "treble_8"
@@ -93,7 +115,11 @@ voiceThree = {\relative c'' {
 }
 
    %%% 2/3 quarter notes
-   \key a \major
+\transpose c a, { \times 2/3 { d'4 e'4 d'4^\prall }  \times 2/3 { c'4 b4-! f'4 }  \times 2/3 { d'4 e'4 d'4^\prall }  \times 2/3 { c'4 b4-! f'4 }  \times 2/3 { d'4 e'4-! f'4 }  \times 2/3 { d'4 e'4 d'4^\prall }  \times 2/3 { c'4 b4 e'4 }  \times 2/3 { b4 c'4 d'4^\prall-! }
+}
+  \key b \major
+  % just quarter
+  \transpose c b, {f'4-_ d'4-_ e'4-_ d'4-_^\prall c'4-_ b4-_ e'4-_ b4-_ c'4-_ d'4-_^\prall a4-_ d'4-_ f'4-_ d'4-_ e'4-_ d'4-_^\prall c'4-_ b4-_ e'4-_ b4-_ c'4-_ d'4-_^\prall a4-_ d'4-_ }
 }
 voiceFour = {\relative c' {
   \clef "treble_8"
@@ -115,12 +141,16 @@ voiceFour = {\relative c' {
   \key fis \major
   %8/9
   \transpose c fis, { \times 8/9 { c'16-! f'16 d'16-! f'16 d'16 e'16 d'16^\prall c'16 b16 }  \times 8/9 { e'16 b16 c'16 d'16^\prall a16 d'16-! f'16 d'16 e'16 }  \times 8/9 { d'16^\prall c'16 b16-! f'16 d'16 e'16 d'16^\prall c'16 b16 }  \times 8/9 { e'16 b16 c'16 d'16^\prall a16-! f'16 d'16 e'16-! f'16 }  \times 8/9 { d'16 e'16 d'16^\prall c'16 b16-! f'16 d'16 e'16 d'16^\prall }  \times 8/9 { c'16 b16 e'16 b16 c'16 d'16^\prall-! f'16 d'16-! f'16 }  \times 8/9 { d'16 e'16-! f'16 d'16 e'16 d'16^\prall c'16 b16-! f'16 }  \times 8/9 { d'16 e'16 d'16^\prall c'16 b16 e'16 b16-! f'16 d'16-! } 
-%%%%%%%%%%%%%%%%\times 8/9 { f'16 d'16 e'16-! } 
 }
 
-  
    %%%%% 4/5
    \key e \major
+\transpose c e, { \times 4/5 { f'8 d'8 e'8-! f'8 d'8 }  \times 4/5 { e'8 d'8^\prall c'8 b8-! f'8 }  \times 4/5 { d'8 e'8-! f'8 d'8 e'8 }  \times 4/5 { d'8^\prall c'8 b8 e'8 b8 }  \times 4/5 { c'8-! f'8 d'8 e'8 d'8^\prall }  \times 4/5 { c'8 b8 e'8 b8 c'8 }  \times 4/5 { d'8^\prall a8-! f'8 d'8 e'8 }  \times 4/5 { d'8^\prall-! f'8 d'8 e'8-! f'8 } 
+%%%%%\times 4/5 { d'8 e'8 d'8^\prall c'8 b8 }  \times 4/5 { e'8 b8-! } 
+}
+   \key fis \major
+%% 4/6 16ths
+  \transpose c fis, { \times 4/6 { d'16 e'16 d'16^\prall c'16 b'16 e'16 }  \times 4/6 { b16-! f'16 d'16 e'16-! f'16 d'16 }  \times 4/6 { e'16 d'16^\prall c'16 b16 e'16 b16-! }  \times 4/6 { f'16 d'16 e'16 d'16^\prall c'16 b16 }  \times 4/6 { e'16 b16 c'16-! f'16 d'16 e'16-! }  \times 4/6 { f'16 d'16 e'16 d'16^\prall c'16 b16 }  \times 4/6 { e'16 b16 c'16 d'16^\prall a16-! f'16 }  \times 4/6 { d'16 e'16 d'16^\prall c'16 b16-! f'16 }  \times 4/6 { d'16-! f'16 d'16 e'16-! f'16 d'16 }  \times 4/6 { e'16 d'16^\prall c'16 b16 e'16 b16 }  \times 4/6 { c'16-! f'16 d'16-! f'16-! f'16 d'16 }  \times 4/6 { e'16 d'16^\prall c'16 b16 e'16 b16 }  \times 4/6 { c'16 d'16^\prall-! f'16 d'16 e'16 d'16^\prall }  \times 4/6 { c'16-! f'16 d'16 e'16 d'16^\prall c'16 }  \times 4/6 { b16 e'16 b16 c'16 d'16^\prall-! f'16 }  \times 4/6 { d'16-! f'16 d'16 e'16 d'16^\prall c'16 }  \times 4/6 { b16-! f'16 d'16 e'16 d'16^\prall c'16 }  \times 4/6 { b16 e'16 b16 c'16-! f'16 d'16 }  \times 4/6 { e'16 d'16^\prall c'16 b16 e'16 b16 }  \times 4/6 { c'16 d'16^\prall a16 d'16-! f'16 d'16 }  \times 4/6 { e'16-! f'16 d'16 e'16 d'16^\prall c'16 }  \times 4/6 { b16 e'16 b16 c'16 d'16^\prall-! f'16 }  \times 4/6 { d'16-! f'16-! f'16 d'16 e'16-! f'16 }  \times 4/6 { d'16 e'16 d'16^\prall c'16 b16-! f'16 }  \times 4/6 { d'16 e'16 d'16^\prall c'16 b16 e'16 }  \times 4/6 { b16 c'16 d'16^\prall-! }  }
 }
 voiceFive = {\relative c' {
   \clef bass
@@ -146,12 +176,19 @@ voiceFive = {\relative c' {
 }
    %%%%%% 8/9
   \key fis \major
+  \transpose c fis,, { \times 8/9 { d'16 e'16 d'16^\prall c'16 b16 e'16 b16 c'16 d'16^\prall  }  \times 8/9 { a16 d'16-! f'16 d'16 e'16 d'16^\prall-! f'16 d'16-! f'16 }  \times 8/9 { d'16 e'16-! f'16 d'16 e'16 d'16^\prall c'16 b16 e'16 }  \times 8/9 { b16 c'16 d'16^\prall a16-! f'16 d'16 e'16 d'16^\prall c'16 }  \times 8/9 { b16-! f'16 d'16 e'16-! f'16 d'16 e'16 d'16^\prall c'16 }  \times 8/9 { b16 e'16 b16-! f'16 d'16 e'16 d'16^\prall-! f'16 d'16-! }  \times 8/9 { f'16 d'16 e'16-! f'16 d'16 e'16 d'16^\prall c'16 b16-! }  \times 8/9 { f'16 d'16 e'16 d'16^\prall c'16 b16 e'16 b16 c'16-! } 
+%%%%%\times 8/9 { d'16^\prall-! f'16 d'16-! } 
+}
+  \key gis \major
+   %% 2/3 in quarters
+  \transpose c gis,, { \times 2/3 { f'4 ( d'4 e'4 }  \times 2/3 { d'4^\prall c'4 b4 }  \times 2/3 { e'4 b4 c'4 }  \times 2/3 { d'4^\prall a4 d'4 ) }  \times 2/3 { f'4 ( d'4 e'4 }  \times 2/3 { d'4^\prall c'4 b4 }  \times 2/3 { e'4 b4 c'4 }  \times 2/3 { d'4^\prall a4 d'4 ) }  \times 2/3 { f'4 ( d'4 e'4 }  \times 2/3 { d'4^\prall c'4 b4 }  \times 2/3 { e'4 b4 c'4 }  \times 2/3 { d'4^\prall a4 d'4 ) }  }
 }
 sanctusOne = \lyricmode {
   Sanc tus.
   ter ra
   cae li
   De -- us
+  glo -- ria
 }
 sanctusTwo = \lyricmode {
   Sa __ _ _ Sa __ _ _ _ _ _ Sa __ _ _ Sa __ _ Sa __ _ _ _ _ _ _ Sa __ _ _ Sa __ _ Sa __ _ _ _ _ _ _ _ _ _
@@ -160,6 +197,34 @@ sanctusTwo = \lyricmode {
   Sa __ _ _ _ _ _ _ _ Sa __ _ _ _ Sa __ _ Sa __ _ _ _ _ _ _ _ _ _ _ Sa __ _ _ Sa __ _ _ _ _ _ Sa __ _ Sa __ _ _ _ Sa Sa __ _ _ _ _ Sa __ _ Sa __ _ _ _ _ _ _ _ _ _ _ Sa __ _ _ Sa __ _ _ _ _ _ _ _ _ _ _ _ Sa __ _ Sa Sa __ _ Sa __ _ _ _ Sa __ _ Sa __ _ _ _ _ _ _ _ _ _
   Sa __ _ _ Sa __ _ _ _ _ _ Sa __ _ _ _ Sa __ _ _ _ _ _ _ _ _ _ _ Sa __ _ _ _ _ _ _ _ _ Sa __ _ _ _ Sa __ _ _ _ _ _ _ _ _ _ _ _ Sa __ _ Sa __ _ _ Sa Sa __ _ _ _ _ _ _ _ _ _ _ Sa __ _ _ _ Sa __ _ _ _ _ _ _ _ _ _
   Sa __ _ _ _ _ _ _ _ _ _ Sa __ _ _ Sa __ _ _ _ _ _ _ _ _ _ _ _ Sa __ _ Sa __ _ _ _ _ _ Sa __ _ _ _ _ _ _ _ _ _ _ Sa __ _ _ Sa __ _ _ _ _ Sa __ _ _ _ _ _ Sa __ _ Sa __ _ _ _ _ _ _ _ _ _ _ Sa Sa __ _ _ _ _ _ Sa __ _ _ _ _ _ _ _ Sa __ _ _ _
+\override LyricText.font-size = #-1
+Cre -- do in u -- num De -- um,
+%"Patrem omnipotentem, factorem cœli et terrae, visibilium omnium"
+%"et invisibilium. Et in unum Dominum, Jesum Christum, Filium Dei unigenitum, et ex Patre"
+%"natum ante omnia saecula. Deum de Deo, Lumen de Lumine, Deum verum de Deo vero, genitum"
+%"non factum, consubstantialem Patri; per quem omnia facta sunt. Qui propter nos homines et propter"
+%"nostram salutem descendit de cœlis. Et incarnatus est de Spiritu Sancto ex Maria Virgine, et homo factus"
+%"est. Crucifixus etiam pro nobis sub Pontio Pilato passus, et sepultus est, et resurrexit tertia die,"
+
+Pat -- rem om -- ni -- po -- ten -- tem, fac -- to -- rem cæ -- li et ter -- ræ, vi -- si -- bi -- li -- um om -- ni -- um, et in -- vi -- si -- bi -- li -- um.
+Et in u -- num Do -- mi -- num Ie -- sum Chris -- tum, Fi -- li -- um De -- i u -- ni -- ge -- ni -- tum. Et ex Pa -- tre na -- tum an -- te om -- ni -- a sæ -- cu -- la.
+De -- um de De -- o,
+lu -- men de lu -- mi -- ne, De -- um
+ve -- rum de De -- o ve -- ro.
+Ge -- ni -- tum, non fac -- tum,
+con -- sub -- stan -- ti -- a -- lem
+Pat -- "ri :"
+per quem om -- ni -- a fac -- ta sunt.
+Qui prop -- ter nos ho -- mi -- nes, et prop -- ter nos -- tram sa -- lu -- tem des -- cen -- dit de cæ -- lis. Et in -- car -- na -- tus est de Spi -- ri -- tu Sanc -- to ex Ma -- ri -- a Vir -- gi -- "ne :" et ho -- mo fac -- tus est. Cru -- ci -- fi -- xus e -- tiam pro no -- "bis :" sub Pon -- tio Pi -- la -- to pas -- sus, et se -- pul -- tus est. Et re -- sur -- re -- xit ter -- ti -- a
+
+
+
+%di -- e,
+die
+%se -- cun -- dum Scrip -- tu -- ras. Et as -- cen -- dit in cæ -- "lum :" se -- det ad dex -- te -- ram Pa -- tris. Et i -- te -- rum ven -- tu -- rus est cum glo -- ri -- a iu -- di -- ca -- re vi -- vos, et mor -- tu -- "os :" cui -- us reg -- ni non e -- rit fi -- nis.
+%Et in Spi -- ri -- tum San -- ctum, Do -- mi -- num, et vi -- vi -- fi -- can -- "tem :" qui ex Pa -- tre, Fi -- li -- o -- que pro -- ce -- dit. Qui cum Pa -- tre, et Fi -- li -- o si -- mul a -- do -- ra -- tur, et con -- glo -- ri -- fi -- ca -- "tur :" qui lo -- cu -- tus est per Pro -- phe -- tas.
+%Et u -- nam, sanc -- tam, ca -- tho -- li -- cam et a -- pos -- to -- li -- cam Ec -- cle -- siam. Con -- fi -- te -- or u -- num bap -- tis -- ma in re -- mis -- si -- o -- nem pec -- ca -- to -- rum. Et ex -- pec -- to res -- ur -- rec -- tio -- nem mor -- tu -- o -- rum. Et vi -- tam ven -- tu -- ri sæ -- cu -- li. A -- men.
+
 }
 sanctusThree = \lyricmode {
   Sa __ _ _ _ _ Sa __ _ _ _ _ _ Sa __ _ _ Sa __ _ _ _ _ _ _ _ Sa __ _ _ _ Sa __ _ _
@@ -178,6 +243,8 @@ sanctusThree = \lyricmode {
   Sa __ _ _ _ _ _ _ _
   Sa __ _ _ _ _ _ Sa __ _ _ Sa __ _ _ _ _ _ _ _ _ _ _ Sa __ _ _ _ Sa __ _ _ _ _ _ _ _ _ Sa __ _ _ Sa __ _ Sa __ _ _ _ _ _ _ _ _ _ Sa __ _ Sa __ _ _ _ Sa Sa __ _ _ _ _
   Sa __ _ Sa __ _ _ _ Sa __ _ Sa Sa __ _ _ _ _ Sa __ _ _ Sa __ _ _ _ _ _ Sa __ _ Sa __ _ _ Sa __ _ _ _ _ _
+  Sa __ _ _ _ _ _ Sa __ _ _ Sa __ _ _ _ _ _ _ _ _ _
+  Sa __ _ _ _ _ _ _ _ _ _ _ _ Sa __ _ _ _ _ _ _ _ _ _ _ _
 }
 sanctusFour = \lyricmode {
   Sa __ _ _ Sa __ _ _ _ _ Sa __ _ Sa __ _ _ Sa __ _ _ _ _ _ Sa __ _ Sa __ _ _
@@ -185,7 +252,11 @@ sanctusFour = \lyricmode {
   Sa __ _ _ Sa __ _ Sa __ _ _ _ _ _ _ _
   Sa __ _ _ _ Sa __ _ _ Sa __ _
   Sa __ _ _ _ _ _ _ _ _ _ Sa __ _ _ Sa __ _ _ _ _ _ _ _ Sa __ _ Sa __ _ _ _ _ _ _ _ _ _ _ Sa __ _ _ Sa __ _ _ _ _ Sa __ _ Sa __ _ _ _ _ _ _ _ Sa __ _ _ Sa __ _ Sa __ _ _ _ _ _ _ _ _ _ _ Sa __ _ _ _ Sa __ _ _ _ _ _ _ _ _
-  Sa __ _ Sa __ _ _ _ _ _ _ _ _ _ _ _ Sa __ _ _ _ _ _ Sa __ _ _ _ _ _ _ _ _ _ _ Sa __ _ _ Sa __ _ _ _ _ _ Sa __ _ _ _ _ _ _ _ _ _ Sa __ _ Sa __ _ _ Sa __ _ _ _ _ _ Sa __ _ _ _ _ _ _ _ Sa __ _ Sa __ _ _
+  Sa __ _ Sa __ _ _ _ _ _ _ _ _ _ _ _ Sa __ _ _ _ _ _ Sa __ _ _ _ _ _ _ _ _ _ _ Sa __ _ _ Sa __ _ _ _ _ _ Sa __ _ _ _ _ _ _ _ _ _ Sa __ _ Sa __ _ _ Sa __ _ _ _ _ _ Sa __ _ _ _ _ _ _ _ Sa __ _
+  %%%%%Sa __ _ _
+%%%%  Sa __ _ _ Sa __ _ _ _ _ _ Sa __ _ _ Sa __ _ _ _ _ _ _ _ _ Sa __ _ _ _ _ _ _ _ _ _ _ Sa __ _ _ _ Sa __ _ _ Sa __ _ _ _ _ _ _ _  
+  Sa __ _ _ Sa __ _ _ _ _ _ Sa __ _ _ Sa __ _ _ _ _ _ _ _ _ Sa __ _ _ _ _ _ _ _ _ _ _ Sa __ _ _ _ Sa __ _ _ Sa __ _ _ _ _ _ _ _
+  Sa __ _ _ Sa __ _ _ _ _ _ _ _ Sa __ _ _ _ _ _ _ _ _ Sa __ _ _ Sa __ _ _ _ _ _ _ _ _ _ _ Sa __ _ _ _ _ _ Sa __ _ Sa __ _ _ Sa __ _ _ _ _ _ _ _ _ Sa __ _ Sa Sa __ _ _ _ _ _ _ _ _ _ Sa __ _ _ _ _ Sa __ _ _ _ _ _ _ _ _ _ Sa __ _ Sa __ _ _ _ _ _ Sa __ _ _ _ _ _ _ _ _ Sa __ _ _ _ _ _ _ _ _ _ _ _ Sa __ _ _ Sa __ _ _ _ _ _ _ _ _ _ Sa __ _ Sa Sa __ _ _ Sa __ _ _ _ _ _ Sa __ _ _ _ _ _ _ _ _ _
 }
 sanctusFive = \lyricmode {
   Sa __ _ _ _ _ _ _ _ _ _ _ _
@@ -202,6 +273,9 @@ sanctusFive = \lyricmode {
   Sa __ _ _ _ _ _ _ _ _ _ _
   Sa __ _ Sa __ _ _ _ _ Sa __ _ _ Sa __ _ _ _ _ _ _ _ _ Sa __ _ _ Sa __ _ _ _ _ _ _ _ _ _ _ Sa __ _ _ Sa __ _ _ _ _ _ Sa __ _ _ _
   Sa __ _ _ _ _ _ _ _ _ Sa __ _ _ Sa __ _ _ _ _ _ Sa __ _ Sa __ _ _ _ _ _ _ _ _ _ Sa __ _ _ _ Sa __ _ _ _ _ _ _ _ _ _ _ Sa __ _ _ Sa __ _ _ _ _ _ _ _ Sa __ _ _ _ _ Sa __ _ Sa __ _ _ _ _ _ _ _ _ _ _ _
+  Sa __ _ _ _ Sa __ _ Sa __ _ _ Sa __ _ _ _ _ _ _ _ _ _ _ Sa __ _ _ _ _ _ Sa __ _ _ Sa __ _ _ _ _ _ _ _ Sa __ _ _ _ Sa __ _ Sa __ _ _ Sa __ _ _ _ _ _ Sa __ _ _ _ _ _ _ _ _ %_ Sa __ _
+    Sa Sa Sa
+
 }
 
 piecemarks = {
